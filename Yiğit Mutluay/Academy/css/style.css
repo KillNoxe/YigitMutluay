@@ -1,0 +1,202 @@
+.nav{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.link-item{
+    color: #DCA33E;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.link-item:hover{
+    color: #ADDCD2;
+}
+.read-more{
+    color: #DCA33E;
+    text-decoration: none;
+    text-align: center; 
+}
+.banner{
+    width: 100%;
+    height: 200px;
+}
+.content{
+    text-align: center;
+    padding: 0 25%;
+}
+.content p{
+    line-height: 1.5;
+}
+.blue{
+    font-size: 25px;
+    text-align: center;
+    color: #18549E;
+    font-weight: bold;
+    text-decoration: none;
+}
+.footer{
+    background-color: #DDDDDD;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+}
+.promo{
+    background-color: #ff0000;
+    text-align: center;
+    /* padding: 200px 150px;
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 10%; */
+    padding: 20px 0 20px 0;
+    /* position: fixed;
+    margin-left: 30%;
+    margin-top: 30%; */
+}
+.promo a{
+    color: #ffff00;
+    font-weight: bold;
+    text-decoration: none;
+}
+.resim{
+    float: left;
+    width: 25%;
+    height: 200px;
+    padding: 5px;
+    border: 1px solid black;
+    margin: 5px;
+    transition:opacity 1s;
+    opacity: 0.5;
+}
+.resim:hover{
+    opacity: 1;
+    border-bottom: 2px solid #ff0000;
+}
+.paragraf{
+    text-indent: 50px;
+    text-align: justify;
+}
+.paragraf::first-letter{
+    font-size: 200%;
+    color: red;
+}
+.baslik{
+    color: #0094FF;
+    font-size: 20px;
+    margin: 5px 0 0 0;
+}
+.degisim{
+    background-color: #808080;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+}
+.yazi{
+    border-radius: 100%;
+    background-color: red;
+    color: red;
+    font-size: 30px;
+    text-decoration: none;
+}
+.yazi:hover{
+    background-color: green;
+    color: green;
+}
+.clearfix{
+    overflow: auto;
+}
+.flex{
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+.flex div{
+    margin: 5px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+}
+.flex div p{
+    text-align: justify;
+}
+.flex img{
+    height: 50%;
+    width: 320px;
+}
+.bold{
+    font-weight: bold;
+    font-size: 22px;
+
+}
+form{
+    margin-left: 30%;
+}
+.group-form{
+    margin-bottom: 5px;
+}
+.group-form label{
+    display: inline-block;
+    width: 100px;
+}
+.default-display{
+    display: inline !important;    
+}
+.group-form input[type="text"],select{
+    width: 35%;
+}
+.submit{
+    color: #0000ff;
+    padding: 0 10px;
+}
+.reset{
+    color: #ff0000;
+    padding: 0 10px;
+}
+.siyah{
+    position: absolute;
+    background-color:#000;
+    opacity: 0.6;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    width: 1000px;
+    height: 440px;
+    font-weight: bold;
+}
+.gec{
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    transition: opacity 5s,top 5s;
+}
+.gecis{
+    opacity: 0;
+    top: -440px;
+}
+.siyah2 p{
+    position: absolute;
+    margin-top: 16%;
+    width: 600px;
+    z-index: 1;
+    text-align: center;
+    font-size: 40px;
+    color: #007FFF;
+    font-weight: bold;
+    left: 200px;
+    top: 150px;
+}
+.siyah2 a{
+    position: absolute;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    z-index: 1;
+    font-size: 14px;
+    background-color: #007FFF;
+    top: 350px;
+    left: 800px;
+    border-radius: 10%;
+    width: 100px;
+    height: 50px;
+    line-height: 52px;
+}
