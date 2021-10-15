@@ -1,0 +1,34 @@
+.header{
+    color: #ff0000;
+    text-align: center;
+    padding: 10px;
+}
+.nav{
+    background-color: #400000;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+}
+.link-item{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.bosluk{
+    background-color: #0050ff;
+    padding: 100px;
+    text-align: center;
+}
+.son{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    font-size: 12px;
+}
+img{
+    width: 250px;
+    height: 200px;
+}

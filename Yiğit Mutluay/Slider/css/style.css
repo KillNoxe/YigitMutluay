@@ -1,0 +1,50 @@
+/* Fotoğraf Başlangıç */
+
+.foto{
+    position: absolute;
+    overflow: hidden;
+    width: 200px;
+    left: 40%;
+    height: 220px;
+}
+
+.foto img{
+    position: absolute;
+    left: 0px;
+    transition: left 1s;
+}
+
+/* Fotoğraf Sonu */
+
+
+/* Tuşlar Başlangıç */
+
+.ok{
+    text-decoration: none;
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    top: 100px;
+    padding: 5px;
+    border-radius: 30%;
+}
+
+.ok1{
+    left: 420px;
+}
+
+.ok1:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.ok2{
+    left: 580px;
+}
+
+.ok2:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/* Tuşlar Son */
