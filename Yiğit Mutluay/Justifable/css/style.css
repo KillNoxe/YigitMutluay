@@ -1,0 +1,176 @@
+body{
+    background-color: #E6E6E6;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.orta{
+    background-color: #fff;
+    margin-top: 4%;
+}
+.header{
+    display: inline-block;
+}
+.header-2{
+    color: #4BC0E3;
+}
+.header:before{
+    content: url("../img/kilit.png");
+    display: inline-block;
+    margin-right: 5px;
+}
+.header p{
+    color: #808080;
+    font-size: 10px;
+    margin: 0;
+    margin-left: 20%;
+
+}
+.content{
+    text-align: center;
+    margin-top: 60px;
+    background-color: #000;
+    padding: 20px;
+}
+.content a{
+    text-decoration: none;
+    font-weight: bold;
+    padding: 21px 14px;
+    color: #808080;
+    font-size: 14px;
+}
+.link-item-renkli{
+    text-decoration: none ;
+    font-weight: bold ;
+    padding: 21px 15px 23px 15px !important;
+    font-size: 14px ;
+    background-color: #01A9DC ;
+    color: #fff !important;
+}
+.link-item:hover{
+    color: #fff;
+}
+.triangle-down {
+    margin-left: 46%;
+	width: 0;
+	height: 0;
+	border-left: 45px solid transparent;
+	border-right: 45px solid transparent;
+}
+.renk1{
+    border-top: 40px solid #000;
+}
+.renk2{
+    border-top: 40px solid #fff;
+}
+.renk3{
+    border-top: 40px solid #F4F4F4;
+}
+.flex{
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+.flex img{
+    width: 150px;
+    height: 150px;
+    margin: 90px;
+    margin-bottom: 0px;
+}
+.baslik{
+    font-weight: bold;
+    color: #4BC0e3;
+    font-size: 24px;
+}
+.yazi{
+    text-align: center;
+    margin: 0 10px;
+}
+.content-2{
+    background-color: #F4F4F4;
+    margin-top: 30px;
+    padding-bottom: 100px;
+}
+.learn-more{
+    color: #fff;
+    background-color: #01A9DC;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px 50px;
+    line-height: 10;
+    margin-left: 20px;
+}
+.asf{
+    text-align: justify;
+}
+.asd{
+    margin: 0 5%;
+}
+.asd h2{
+    margin-bottom: 0;
+}
+.as{
+    margin-top: 0;
+    color: #808080;
+    text-align: justify;
+}
+.clearfix {
+    overflow: auto;
+}
+.content-3{
+    color: #fff;
+    background-color: black;
+    text-align: center;
+}
+.asd a{
+    font-weight: bold;
+}
+.siyah{
+    color: #000;
+    text-decoration: none;
+}
+.mavi{
+    color: #01A9DC;
+}
+.mavi:hover{
+    text-decoration: none;
+}
+.footer{
+    font-weight: bold;
+    margin-top: 50px;
+    text-align: center;
+}
+.footer p{
+    color: #808080;
+    font-size: 16px;
+}
+.flex-2{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.flex-2 img{
+    width: 300px;
+    height: 150px;
+    margin-left: 25px;
+    margin-bottom: 0px;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+.flex-2 img:hover{
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+.sonn{
+    margin: 30px 20%;
+    color: #808080;
+}
+.beyaz{
+    height: 60px;
+}
+.copyright{
+    padding-top: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #E6E6E6;
+    line-height: 2;
+    letter-spacing: 1.3px;
+}
