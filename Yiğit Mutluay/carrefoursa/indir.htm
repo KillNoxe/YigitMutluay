@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta name="viewport" content="initial-scale=1" />
+<meta charset="UTF-8" />
+<link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,700&amp;subset=latin-ext" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="https://blogkod.com/wp-content/themes/safirblog/scripts/html5shiv.js"></script>
+<![endif]-->
+<link rel="shortcut icon" href="http://blogkod.com/wp-content/uploads/2018/12/blogkodcomfavico.png" type="image/x-icon">
+<title>Scratch-Labirent Uygulaması | BlogKod</title>
+
+		<!-- All in One SEO 4.1.4.4 -->
+		<meta name="description" content="Bu uygulamamızda Olaylar taş blokunda yer alan haber salma taşlarını kullanarak 3 seviyeden oluşan basit bir labirent oyunu tasarlayacağız." />
+		<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+		<meta name="google-site-verification" content="ThM6GsF3YmV2ZrZ8FrWNNkztTyXwAGgLgN6aj7bT-K0" />
+		<meta name="keywords" content="scratch,kodlama,yazılım,bilişim,teknoloji,bilişim,blog kod,blogkod,blok kod,blokkod,bty,kodlama,labirent oyunu,scratch dekor tasarımı,scratch haber sal taşları,scratch-labirent uygulaması,teknoloji,yazılım,scratch" />
+		<link rel="canonical" href="https://blogkod.com/scratch-labirent-uygulamasi/" />
+		<meta name="google" content="nositelinkssearchbox" />
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebSite","@id":"https:\/\/blogkod.com\/#website","url":"https:\/\/blogkod.com\/","name":"BlogKod","description":"Bili\u015fim Teknolojileri ve Yaz\u0131l\u0131m Dersi \u0130\u00e7erikleri","inLanguage":"tr-TR","publisher":{"@id":"https:\/\/blogkod.com\/#person"}},{"@type":"Person","@id":"https:\/\/blogkod.com\/#person","name":"admin","image":{"@type":"ImageObject","@id":"https:\/\/blogkod.com\/scratch-labirent-uygulamasi\/#personImage","url":"https:\/\/secure.gravatar.com\/avatar\/0758dfa41ede2dec71d5cd5c5c4200c8?s=96&d=identicon&r=g","width":96,"height":96,"caption":"admin"},"sameAs":["https:\/\/www.facebook.com\/blogkodcom","https:\/\/twitter.com\/blogkodcom","https:\/\/www.instagram.com\/blogkodcom","https:\/\/tr.pinterest.com\/blogkodcom\/","https:\/\/www.youtube.com\/channel\/UC0jSeXvADGX5atXPWMrB-XQ","https:\/\/www.linkedin.com\/in\/blogkodcom\/"]},{"@type":"BreadcrumbList","@id":"https:\/\/blogkod.com\/scratch-labirent-uygulamasi\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/blogkod.com\/#listItem","position":1,"item":{"@type":"WebPage","@id":"https:\/\/blogkod.com\/","name":"Ev","description":"BlogKod Bili\u015fim, Teknoloji, Yaz\u0131l\u0131m, Arduino ve Kodlama i\u00e7eriklerinin yer ald\u0131\u011f\u0131 ki\u015fisel bir blog sitesidir.","url":"https:\/\/blogkod.com\/"},"nextItem":"https:\/\/blogkod.com\/scratch-labirent-uygulamasi\/#listItem"},{"@type":"ListItem","@id":"https:\/\/blogkod.com\/scratch-labirent-uygulamasi\/#listItem","position":2,"item":{"@type":"WebPage","@id":"https:\/\/blogkod.com\/scratch-labirent-uygulamasi\/","name":"Scratch-Labirent Uygulamas\u0131","description":"Bu uygulamam\u0131zda Olaylar ta\u015f blokunda yer alan haber salma ta\u015flar\u0131n\u0131 kullanarak 3 seviyeden olu\u015fan basit bir labirent oyunu tasarlayaca\u011f\u0131z.","url":"https:\/\/blogkod.com\/scratch-labirent-uygulamasi\/"},"previousItem":"https:\/\/blogkod.com\/#listItem"}]},{"@type":"Person","@id":"https:\/\/blogkod.com\/author\/admin\/#author","url":"https:\/\/blogkod.com\/author\/admin\/","name":"admin","image":{"@type":"ImageObject","@id":"https:\/\/blogkod.com\/scratch-labirent-uygulamasi\/#authorImage","url":"https:\/\/secure.gravatar.com\/avatar\/0758dfa41ede2dec71d5cd5c5c4200c8?s=96&d=identicon&r=g","width":96,"height":96,"caption":"admin"},"sameAs":["https:\/\/www.facebook.com\/blogkodcom","https:\/\/twitter.com\/blogkodcom","https:\/\/www.instagram.com\/blogkodcom","https:\/\/tr.pinterest.com\/blogkodcom\/","https:\/\/www.youtube.com\/channel\/UC0jSeXvADGX5atXPWMrB-XQ","https:\/\/www.linkedin.com\/in\/blogkodcom\/"]},{"@type":"WebPage","@id":"https:\/\/blogkod.com\/scratch-labirent-uygulamasi\/#webpage","url":"https:\/\/blogkod.com\/scratch-labirent-uygulamasi\/","name":"Scratch-Labirent Uygulamas\u0131 | BlogKod","description":"Bu uygulamam\u0131zda Olaylar ta\u015f blokunda yer alan haber salma ta\u015flar\u0131n\u0131 kullanarak 3 seviyeden olu\u015fan basit bir labirent oyunu tasarlayaca\u011f\u0131z.","inLanguage":"tr-TR","isPartOf":{"@id":"https:\/\/blogkod.com\/#website"},"breadcrumb":{"@id":"https:\/\/blogkod.com\/scratch-labirent-uygulamasi\/#breadcrumblist"},"author":"https:\/\/blogkod.com\/author\/admin\/#author","creator":"https:\/\/blogkod.com\/author\/admin\/#author","image":{"@type":"ImageObject","@id":"https:\/\/blogkod.com\/#mainImage","url":"https:\/\/blogkod.com\/wp-content\/uploads\/2019\/04\/labirent-uygulamasi-manset-230419.png","width":770,"height":443},"primaryImageOfPage":{"@id":"https:\/\/blogkod.com\/scratch-labirent-uygulamasi\/#mainImage"},"datePublished":"2019-04-23T20:01:45+03:00","dateModified":"2019-05-17T09:26:39+03:00"},{"@type":"Article","@id":"https:\/\/blogkod.com\/scratch-labirent-uygulamasi\/#article","name":"Scratch-Labirent Uygulamas\u0131 | BlogKod","description":"Bu uygulamam\u0131zda Olaylar ta\u015f blokunda yer alan haber salma ta\u015flar\u0131n\u0131 kullanarak 3 seviyeden olu\u015fan basit bir labirent oyunu tasarlayaca\u011f\u0131z.","inLanguage":"tr-TR","headline":"Scratch-Labirent Uygulamas\u0131","author":{"@id":"https:\/\/blogkod.com\/author\/admin\/#author"},"publisher":{"@id":"https:\/\/blogkod.com\/#person"},"datePublished":"2019-04-23T20:01:45+03:00","dateModified":"2019-05-17T09:26:39+03:00","commentCount":3,"articleSection":"Kodlama, Scratch, Bili\u015fim, blog kod, blogkod, blok kod, blokkod, BTY, kodlama, labirent oyunu, scratch dekor tasar\u0131m\u0131, scratch haber sal ta\u015flar\u0131, Scratch-Labirent Uygulamas\u0131, teknoloji, yaz\u0131l\u0131m","mainEntityOfPage":{"@id":"https:\/\/blogkod.com\/scratch-labirent-uygulamasi\/#webpage"},"isPartOf":{"@id":"https:\/\/blogkod.com\/scratch-labirent-uygulamasi\/#webpage"},"image":{"@type":"ImageObject","@id":"https:\/\/blogkod.com\/#articleImage","url":"https:\/\/blogkod.com\/wp-content\/uploads\/2019\/04\/labirent-uygulamasi-manset-230419.png","width":770,"height":443}}]}
+		</script>
+		<script type="text/javascript" >
+			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+			ga('create', "UA-131789076-1", 'auto');
+			ga('send', 'pageview');
+		</script>
+		<script async src="https://www.google-analytics.com/analytics.js"></script>
+		<!-- All in One SEO -->
+
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='dns-prefetch' href='//pagead2.googlesyndication.com' />
+<link rel="alternate" type="application/rss+xml" title="BlogKod &raquo; beslemesi" href="https://blogkod.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="BlogKod &raquo; yorum beslemesi" href="https://blogkod.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="BlogKod &raquo; Scratch-Labirent Uygulaması yorum beslemesi" href="https://blogkod.com/scratch-labirent-uygulamasi/feed/" />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://blogkod.com/wp-includes/css/dist/block-library/style.min.css?ver=5.8.1'  media='all' />
+<link rel='stylesheet' id='h5p-plugin-styles-css'  href='https://blogkod.com/wp-content/plugins/h5p/h5p-php-library/styles/h5p.css?ver=1.15.3'  media='all' />
+<link rel='stylesheet' id='safirstyle-css'  href='https://blogkod.com/wp-content/themes/safirblog/style.css?ver=5.8.1'  media='all' />
+<link rel='stylesheet' id='cookie-notice-front-css'  href='https://blogkod.com/wp-content/plugins/cookie-notice/includes/../css/front.min.css?ver=5.8.1'  media='all' />
+<script  src='https://blogkod.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script  src='https://blogkod.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+
+<!-- Google Analytics snippet added by Site Kit -->
+<script  src='https://www.googletagmanager.com/gtag/js?id=UA-131789076-1' id='google_gtagjs-js' async></script>
+<script  id='google_gtagjs-js-after'>
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag('set', 'linker', {"domains":["blogkod.com"]} );
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "UA-131789076-1", {"anonymize_ip":true});
+</script>
+
+<!-- End Google Analytics snippet added by Site Kit -->
+<link rel="https://api.w.org/" href="https://blogkod.com/wp-json/" /><link rel="alternate" type="application/json" href="https://blogkod.com/wp-json/wp/v2/posts/2635" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blogkod.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blogkod.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='https://blogkod.com/?p=2635' />
+<link rel="alternate" type="application/json+oembed" href="https://blogkod.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblogkod.com%2Fscratch-labirent-uygulamasi%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blogkod.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblogkod.com%2Fscratch-labirent-uygulamasi%2F&#038;format=xml" />
+<meta name="generator" content="Site Kit by Google 1.44.0" />
+<!-- Google AdSense snippet added by Site Kit -->
+<meta name="google-adsense-platform-account" content="ca-host-pub-2644536267352236">
+<meta name="google-adsense-platform-domain" content="sitekit.withgoogle.com">
+<!-- End Google AdSense snippet added by Site Kit -->
+
+<!-- Google AdSense snippet added by Site Kit -->
+<script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4492462776635545" crossorigin="anonymous" type="text/javascript"></script>
+
+<!-- End Google AdSense snippet added by Site Kit -->
+<link rel="icon" href="https://blogkod.com/wp-content/uploads/2018/12/cropped-blogkodcomfavico-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://blogkod.com/wp-content/uploads/2018/12/cropped-blogkodcomfavico-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://blogkod.com/wp-content/uploads/2018/12/cropped-blogkodcomfavico-180x180.png" />
+<meta name="msapplication-TileImage" content="https://blogkod.com/wp-content/uploads/2018/12/cropped-blogkodcomfavico-270x270.png" />
+<script data-ad-client="ca-pub-4492462776635545" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+</script><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131789076-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131789076-1');
+</script><style>a,.mainHeading .icon:before,.reading ul li:before,.safirBox .post a:hover,.safirBox.post a:hover,.sliderWidget .sfrNav span:before,.safirCustomMenu a .icon:before,.tabbedWidget .tabheading a .icon:before,.tabbedWidget .post .title a:hover,.sfrIconForm .item .icon span:before{color:#f89d41;}.mainHeading:before,#slider .post .safirCategoryMeta a,.advancedPostsWidget1 .post .detail .safirCategoryMeta a,.advancedPostsWidget3 .post .detail .safirCategoryMeta a,.sliderWidget .post .safirCategoryMeta a,.timelineWidget .post .time,.slidingWidget .post .hover:before,.safirTop,.safirnavi span,.safirnavi a,#gallery-links a,.safirBox .owl-nav div,#main form button.submit,#main form input[type=submit]{background:#f89d41;}#search .searchButton{color:#f89d41;}footer .footerHeading:before{background:#1b1f29;}.sliderWidget .owl-dot.active{border:2px solid #1b1f29;background:#1b1f29;}.tabbedWidget .tabheading a.active{border-bottom:2px solid #f89d41;}footer,footer .innerContainer.top,#footerBottom{background:#1b1f29;}#topbar{background:#70ad51;}#menu li span.icon{color:#f89d41;}#menu>ul>li:hover>a{border-top:2px solid #202530;}#menu .sub-menu{border-bottom:2px solid #202530;}footer:before{background:-moz-linear-gradient(left,#1b1f29 0%,#1b1f29 50%,rgba(255,255,255,0.15) 51%,rgba(255,255,255,0.04) 100%);background:-webkit-linear-gradient(left,#1b1f29 0%,#1b1f29 50%,rgba(255,255,255,0.04) 51%,rgba(255,255,255,0.04) 100%);background:linear-gradient(to right,#1b1f29 0%,#1b1f29 50%,rgba(255,255,255,0.04) 51%,rgba(255,255,255,0.04) 100%);}footer.hidden:before{display:none;}footer .footerCols{background:-moz-linear-gradient(left,#1b1f29 0%,#1b1f29 23.75%,rgba(255,255,255,0.04) 23.75%,rgba(255,255,255,0.04) 100%);background:-webkit-linear-gradient(left,#1b1f29 0%,#1b1f29 23.75%,rgba(255,255,255,0.04) 23.75%,rgba(255,255,255,0.04) 100%);background:linear-gradient(to right,#1b1f29 0%,#1b1f29 23.75%,rgba(255,255,255,0.04) 23.75%,rgba(255,255,255,0.04) 100%);}.safirBox.color512 .mainHeading .icon:before,.safirBox.color512 .post a:hover,.safirCustomMenu.color512 a .icon:before,.tabbedWidget .tabheading a.color512 .icon:before,.searchWidget.color512 button:before,.tabbedWidget .tab.color512 .post .title a:hover{color:#5b963f !important;}#slider .post-container .post .safirCategoryMeta a.cat512,.sliderWidget .post .safirCategoryMeta a.cat512,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat512,.safirBox.color512 .mainHeading:before,.slidingWidget.color512 .post .hover:before,.safirBox.color512 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat512,.timelineWidget.color512 .post .time,.advancedPostsWidget2 .sfrCatClr.cat512,.listingWidget.color512 .items a .number,.advancedPostsWidget1.color512 .post .title:before,.advancedPostsWidget4.color512 .post a.more,.advancedPostsWidget5.color512 .post .title:before,.advancedPostsWidget5.color512 .titles .title.active a,.fiveWidget.color512 .leftSide .post .title:before,.commentsWidget.color512 .item .title:before,.safirBox.color512 .safirnavi span,.safirBox.color512 .safirnavi a,.searchWidget.color512 form:before{background:#5b963f;}.tabbedWidget .tabheading a.color512.active{border-color:#5b963f;}.safirBox.color514 .mainHeading .icon:before,.safirBox.color514 .post a:hover,.safirCustomMenu.color514 a .icon:before,.tabbedWidget .tabheading a.color514 .icon:before,.searchWidget.color514 button:before,.tabbedWidget .tab.color514 .post .title a:hover{color:#4aaec2 !important;}#slider .post-container .post .safirCategoryMeta a.cat514,.sliderWidget .post .safirCategoryMeta a.cat514,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat514,.safirBox.color514 .mainHeading:before,.slidingWidget.color514 .post .hover:before,.safirBox.color514 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat514,.timelineWidget.color514 .post .time,.advancedPostsWidget2 .sfrCatClr.cat514,.listingWidget.color514 .items a .number,.advancedPostsWidget1.color514 .post .title:before,.advancedPostsWidget4.color514 .post a.more,.advancedPostsWidget5.color514 .post .title:before,.advancedPostsWidget5.color514 .titles .title.active a,.fiveWidget.color514 .leftSide .post .title:before,.commentsWidget.color514 .item .title:before,.safirBox.color514 .safirnavi span,.safirBox.color514 .safirnavi a,.searchWidget.color514 form:before{background:#4aaec2;}.tabbedWidget .tabheading a.color514.active{border-color:#4aaec2;}.safirBox.color513 .mainHeading .icon:before,.safirBox.color513 .post a:hover,.safirCustomMenu.color513 a .icon:before,.tabbedWidget .tabheading a.color513 .icon:before,.searchWidget.color513 button:before,.tabbedWidget .tab.color513 .post .title a:hover{color:#ab27c2 !important;}#slider .post-container .post .safirCategoryMeta a.cat513,.sliderWidget .post .safirCategoryMeta a.cat513,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat513,.safirBox.color513 .mainHeading:before,.slidingWidget.color513 .post .hover:before,.safirBox.color513 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat513,.timelineWidget.color513 .post .time,.advancedPostsWidget2 .sfrCatClr.cat513,.listingWidget.color513 .items a .number,.advancedPostsWidget1.color513 .post .title:before,.advancedPostsWidget4.color513 .post a.more,.advancedPostsWidget5.color513 .post .title:before,.advancedPostsWidget5.color513 .titles .title.active a,.fiveWidget.color513 .leftSide .post .title:before,.commentsWidget.color513 .item .title:before,.safirBox.color513 .safirnavi span,.safirBox.color513 .safirnavi a,.searchWidget.color513 form:before{background:#ab27c2;}.tabbedWidget .tabheading a.color513.active{border-color:#ab27c2;}.safirBox.color515 .mainHeading .icon:before,.safirBox.color515 .post a:hover,.safirCustomMenu.color515 a .icon:before,.tabbedWidget .tabheading a.color515 .icon:before,.searchWidget.color515 button:before,.tabbedWidget .tab.color515 .post .title a:hover{color:#39db8f !important;}#slider .post-container .post .safirCategoryMeta a.cat515,.sliderWidget .post .safirCategoryMeta a.cat515,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat515,.safirBox.color515 .mainHeading:before,.slidingWidget.color515 .post .hover:before,.safirBox.color515 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat515,.timelineWidget.color515 .post .time,.advancedPostsWidget2 .sfrCatClr.cat515,.listingWidget.color515 .items a .number,.advancedPostsWidget1.color515 .post .title:before,.advancedPostsWidget4.color515 .post a.more,.advancedPostsWidget5.color515 .post .title:before,.advancedPostsWidget5.color515 .titles .title.active a,.fiveWidget.color515 .leftSide .post .title:before,.commentsWidget.color515 .item .title:before,.safirBox.color515 .safirnavi span,.safirBox.color515 .safirnavi a,.searchWidget.color515 form:before{background:#39db8f;}.tabbedWidget .tabheading a.color515.active{border-color:#39db8f;}.safirBox.color496 .mainHeading .icon:before,.safirBox.color496 .post a:hover,.safirCustomMenu.color496 a .icon:before,.tabbedWidget .tabheading a.color496 .icon:before,.searchWidget.color496 button:before,.tabbedWidget .tab.color496 .post .title a:hover{color:#a170cc !important;}#slider .post-container .post .safirCategoryMeta a.cat496,.sliderWidget .post .safirCategoryMeta a.cat496,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat496,.safirBox.color496 .mainHeading:before,.slidingWidget.color496 .post .hover:before,.safirBox.color496 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat496,.timelineWidget.color496 .post .time,.advancedPostsWidget2 .sfrCatClr.cat496,.listingWidget.color496 .items a .number,.advancedPostsWidget1.color496 .post .title:before,.advancedPostsWidget4.color496 .post a.more,.advancedPostsWidget5.color496 .post .title:before,.advancedPostsWidget5.color496 .titles .title.active a,.fiveWidget.color496 .leftSide .post .title:before,.commentsWidget.color496 .item .title:before,.safirBox.color496 .safirnavi span,.safirBox.color496 .safirnavi a,.searchWidget.color496 form:before{background:#a170cc;}.tabbedWidget .tabheading a.color496.active{border-color:#a170cc;}.safirBox.color226 .mainHeading .icon:before,.safirBox.color226 .post a:hover,.safirCustomMenu.color226 a .icon:before,.tabbedWidget .tabheading a.color226 .icon:before,.searchWidget.color226 button:before,.tabbedWidget .tab.color226 .post .title a:hover{color:#38b6ff !important;}#slider .post-container .post .safirCategoryMeta a.cat226,.sliderWidget .post .safirCategoryMeta a.cat226,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat226,.safirBox.color226 .mainHeading:before,.slidingWidget.color226 .post .hover:before,.safirBox.color226 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat226,.timelineWidget.color226 .post .time,.advancedPostsWidget2 .sfrCatClr.cat226,.listingWidget.color226 .items a .number,.advancedPostsWidget1.color226 .post .title:before,.advancedPostsWidget4.color226 .post a.more,.advancedPostsWidget5.color226 .post .title:before,.advancedPostsWidget5.color226 .titles .title.active a,.fiveWidget.color226 .leftSide .post .title:before,.commentsWidget.color226 .item .title:before,.safirBox.color226 .safirnavi span,.safirBox.color226 .safirnavi a,.searchWidget.color226 form:before{background:#38b6ff;}.tabbedWidget .tabheading a.color226.active{border-color:#38b6ff;}.safirBox.color510 .mainHeading .icon:before,.safirBox.color510 .post a:hover,.safirCustomMenu.color510 a .icon:before,.tabbedWidget .tabheading a.color510 .icon:before,.searchWidget.color510 button:before,.tabbedWidget .tab.color510 .post .title a:hover{color:#398582 !important;}#slider .post-container .post .safirCategoryMeta a.cat510,.sliderWidget .post .safirCategoryMeta a.cat510,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat510,.safirBox.color510 .mainHeading:before,.slidingWidget.color510 .post .hover:before,.safirBox.color510 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat510,.timelineWidget.color510 .post .time,.advancedPostsWidget2 .sfrCatClr.cat510,.listingWidget.color510 .items a .number,.advancedPostsWidget1.color510 .post .title:before,.advancedPostsWidget4.color510 .post a.more,.advancedPostsWidget5.color510 .post .title:before,.advancedPostsWidget5.color510 .titles .title.active a,.fiveWidget.color510 .leftSide .post .title:before,.commentsWidget.color510 .item .title:before,.safirBox.color510 .safirnavi span,.safirBox.color510 .safirnavi a,.searchWidget.color510 form:before{background:#398582;}.tabbedWidget .tabheading a.color510.active{border-color:#398582;}.safirBox.color497 .mainHeading .icon:before,.safirBox.color497 .post a:hover,.safirCustomMenu.color497 a .icon:before,.tabbedWidget .tabheading a.color497 .icon:before,.searchWidget.color497 button:before,.tabbedWidget .tab.color497 .post .title a:hover{color:#dede1f !important;}#slider .post-container .post .safirCategoryMeta a.cat497,.sliderWidget .post .safirCategoryMeta a.cat497,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat497,.safirBox.color497 .mainHeading:before,.slidingWidget.color497 .post .hover:before,.safirBox.color497 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat497,.timelineWidget.color497 .post .time,.advancedPostsWidget2 .sfrCatClr.cat497,.listingWidget.color497 .items a .number,.advancedPostsWidget1.color497 .post .title:before,.advancedPostsWidget4.color497 .post a.more,.advancedPostsWidget5.color497 .post .title:before,.advancedPostsWidget5.color497 .titles .title.active a,.fiveWidget.color497 .leftSide .post .title:before,.commentsWidget.color497 .item .title:before,.safirBox.color497 .safirnavi span,.safirBox.color497 .safirnavi a,.searchWidget.color497 form:before{background:#dede1f;}.tabbedWidget .tabheading a.color497.active{border-color:#dede1f;}.safirBox.color227 .mainHeading .icon:before,.safirBox.color227 .post a:hover,.safirCustomMenu.color227 a .icon:before,.tabbedWidget .tabheading a.color227 .icon:before,.searchWidget.color227 button:before,.tabbedWidget .tab.color227 .post .title a:hover{color:#ff5757 !important;}#slider .post-container .post .safirCategoryMeta a.cat227,.sliderWidget .post .safirCategoryMeta a.cat227,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat227,.safirBox.color227 .mainHeading:before,.slidingWidget.color227 .post .hover:before,.safirBox.color227 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat227,.timelineWidget.color227 .post .time,.advancedPostsWidget2 .sfrCatClr.cat227,.listingWidget.color227 .items a .number,.advancedPostsWidget1.color227 .post .title:before,.advancedPostsWidget4.color227 .post a.more,.advancedPostsWidget5.color227 .post .title:before,.advancedPostsWidget5.color227 .titles .title.active a,.fiveWidget.color227 .leftSide .post .title:before,.commentsWidget.color227 .item .title:before,.safirBox.color227 .safirnavi span,.safirBox.color227 .safirnavi a,.searchWidget.color227 form:before{background:#ff5757;}.tabbedWidget .tabheading a.color227.active{border-color:#ff5757;}.safirBox.color511 .mainHeading .icon:before,.safirBox.color511 .post a:hover,.safirCustomMenu.color511 a .icon:before,.tabbedWidget .tabheading a.color511 .icon:before,.searchWidget.color511 button:before,.tabbedWidget .tab.color511 .post .title a:hover{color:#d651c0 !important;}#slider .post-container .post .safirCategoryMeta a.cat511,.sliderWidget .post .safirCategoryMeta a.cat511,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat511,.safirBox.color511 .mainHeading:before,.slidingWidget.color511 .post .hover:before,.safirBox.color511 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat511,.timelineWidget.color511 .post .time,.advancedPostsWidget2 .sfrCatClr.cat511,.listingWidget.color511 .items a .number,.advancedPostsWidget1.color511 .post .title:before,.advancedPostsWidget4.color511 .post a.more,.advancedPostsWidget5.color511 .post .title:before,.advancedPostsWidget5.color511 .titles .title.active a,.fiveWidget.color511 .leftSide .post .title:before,.commentsWidget.color511 .item .title:before,.safirBox.color511 .safirnavi span,.safirBox.color511 .safirnavi a,.searchWidget.color511 form:before{background:#d651c0;}.tabbedWidget .tabheading a.color511.active{border-color:#d651c0;}.safirBox.color224 .mainHeading .icon:before,.safirBox.color224 .post a:hover,.safirCustomMenu.color224 a .icon:before,.tabbedWidget .tabheading a.color224 .icon:before,.searchWidget.color224 button:before,.tabbedWidget .tab.color224 .post .title a:hover{color:#65a9e0 !important;}#slider .post-container .post .safirCategoryMeta a.cat224,.sliderWidget .post .safirCategoryMeta a.cat224,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat224,.safirBox.color224 .mainHeading:before,.slidingWidget.color224 .post .hover:before,.safirBox.color224 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat224,.timelineWidget.color224 .post .time,.advancedPostsWidget2 .sfrCatClr.cat224,.listingWidget.color224 .items a .number,.advancedPostsWidget1.color224 .post .title:before,.advancedPostsWidget4.color224 .post a.more,.advancedPostsWidget5.color224 .post .title:before,.advancedPostsWidget5.color224 .titles .title.active a,.fiveWidget.color224 .leftSide .post .title:before,.commentsWidget.color224 .item .title:before,.safirBox.color224 .safirnavi span,.safirBox.color224 .safirnavi a,.searchWidget.color224 form:before{background:#65a9e0;}.tabbedWidget .tabheading a.color224.active{border-color:#65a9e0;}.safirBox.color636 .mainHeading .icon:before,.safirBox.color636 .post a:hover,.safirCustomMenu.color636 a .icon:before,.tabbedWidget .tabheading a.color636 .icon:before,.searchWidget.color636 button:before,.tabbedWidget .tab.color636 .post .title a:hover{color:#99ebe6 !important;}#slider .post-container .post .safirCategoryMeta a.cat636,.sliderWidget .post .safirCategoryMeta a.cat636,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat636,.safirBox.color636 .mainHeading:before,.slidingWidget.color636 .post .hover:before,.safirBox.color636 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat636,.timelineWidget.color636 .post .time,.advancedPostsWidget2 .sfrCatClr.cat636,.listingWidget.color636 .items a .number,.advancedPostsWidget1.color636 .post .title:before,.advancedPostsWidget4.color636 .post a.more,.advancedPostsWidget5.color636 .post .title:before,.advancedPostsWidget5.color636 .titles .title.active a,.fiveWidget.color636 .leftSide .post .title:before,.commentsWidget.color636 .item .title:before,.safirBox.color636 .safirnavi span,.safirBox.color636 .safirnavi a,.searchWidget.color636 form:before{background:#99ebe6;}.tabbedWidget .tabheading a.color636.active{border-color:#99ebe6;}.safirBox.color1 .mainHeading .icon:before,.safirBox.color1 .post a:hover,.safirCustomMenu.color1 a .icon:before,.tabbedWidget .tabheading a.color1 .icon:before,.searchWidget.color1 button:before,.tabbedWidget .tab.color1 .post .title a:hover{color:#09b809 !important;}#slider .post-container .post .safirCategoryMeta a.cat1,.sliderWidget .post .safirCategoryMeta a.cat1,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat1,.safirBox.color1 .mainHeading:before,.slidingWidget.color1 .post .hover:before,.safirBox.color1 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat1,.timelineWidget.color1 .post .time,.advancedPostsWidget2 .sfrCatClr.cat1,.listingWidget.color1 .items a .number,.advancedPostsWidget1.color1 .post .title:before,.advancedPostsWidget4.color1 .post a.more,.advancedPostsWidget5.color1 .post .title:before,.advancedPostsWidget5.color1 .titles .title.active a,.fiveWidget.color1 .leftSide .post .title:before,.commentsWidget.color1 .item .title:before,.safirBox.color1 .safirnavi span,.safirBox.color1 .safirnavi a,.searchWidget.color1 form:before{background:#09b809;}.tabbedWidget .tabheading a.color1.active{border-color:#09b809;}.safirBox.color241 .mainHeading .icon:before,.safirBox.color241 .post a:hover,.safirCustomMenu.color241 a .icon:before,.tabbedWidget .tabheading a.color241 .icon:before,.searchWidget.color241 button:before,.tabbedWidget .tab.color241 .post .title a:hover{color:#e31668 !important;}#slider .post-container .post .safirCategoryMeta a.cat241,.sliderWidget .post .safirCategoryMeta a.cat241,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat241,.safirBox.color241 .mainHeading:before,.slidingWidget.color241 .post .hover:before,.safirBox.color241 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat241,.timelineWidget.color241 .post .time,.advancedPostsWidget2 .sfrCatClr.cat241,.listingWidget.color241 .items a .number,.advancedPostsWidget1.color241 .post .title:before,.advancedPostsWidget4.color241 .post a.more,.advancedPostsWidget5.color241 .post .title:before,.advancedPostsWidget5.color241 .titles .title.active a,.fiveWidget.color241 .leftSide .post .title:before,.commentsWidget.color241 .item .title:before,.safirBox.color241 .safirnavi span,.safirBox.color241 .safirnavi a,.searchWidget.color241 form:before{background:#e31668;}.tabbedWidget .tabheading a.color241.active{border-color:#e31668;}.safirBox.color222 .mainHeading .icon:before,.safirBox.color222 .post a:hover,.safirCustomMenu.color222 a .icon:before,.tabbedWidget .tabheading a.color222 .icon:before,.searchWidget.color222 button:before,.tabbedWidget .tab.color222 .post .title a:hover{color:#e04ec8 !important;}#slider .post-container .post .safirCategoryMeta a.cat222,.sliderWidget .post .safirCategoryMeta a.cat222,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat222,.safirBox.color222 .mainHeading:before,.slidingWidget.color222 .post .hover:before,.safirBox.color222 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat222,.timelineWidget.color222 .post .time,.advancedPostsWidget2 .sfrCatClr.cat222,.listingWidget.color222 .items a .number,.advancedPostsWidget1.color222 .post .title:before,.advancedPostsWidget4.color222 .post a.more,.advancedPostsWidget5.color222 .post .title:before,.advancedPostsWidget5.color222 .titles .title.active a,.fiveWidget.color222 .leftSide .post .title:before,.commentsWidget.color222 .item .title:before,.safirBox.color222 .safirnavi span,.safirBox.color222 .safirnavi a,.searchWidget.color222 form:before{background:#e04ec8;}.tabbedWidget .tabheading a.color222.active{border-color:#e04ec8;}.safirBox.color263 .mainHeading .icon:before,.safirBox.color263 .post a:hover,.safirCustomMenu.color263 a .icon:before,.tabbedWidget .tabheading a.color263 .icon:before,.searchWidget.color263 button:before,.tabbedWidget .tab.color263 .post .title a:hover{color:#e31668 !important;}#slider .post-container .post .safirCategoryMeta a.cat263,.sliderWidget .post .safirCategoryMeta a.cat263,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat263,.safirBox.color263 .mainHeading:before,.slidingWidget.color263 .post .hover:before,.safirBox.color263 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat263,.timelineWidget.color263 .post .time,.advancedPostsWidget2 .sfrCatClr.cat263,.listingWidget.color263 .items a .number,.advancedPostsWidget1.color263 .post .title:before,.advancedPostsWidget4.color263 .post a.more,.advancedPostsWidget5.color263 .post .title:before,.advancedPostsWidget5.color263 .titles .title.active a,.fiveWidget.color263 .leftSide .post .title:before,.commentsWidget.color263 .item .title:before,.safirBox.color263 .safirnavi span,.safirBox.color263 .safirnavi a,.searchWidget.color263 form:before{background:#e31668;}.tabbedWidget .tabheading a.color263.active{border-color:#e31668;}.safirBox.color230 .mainHeading .icon:before,.safirBox.color230 .post a:hover,.safirCustomMenu.color230 a .icon:before,.tabbedWidget .tabheading a.color230 .icon:before,.searchWidget.color230 button:before,.tabbedWidget .tab.color230 .post .title a:hover{color:#ed5a78 !important;}#slider .post-container .post .safirCategoryMeta a.cat230,.sliderWidget .post .safirCategoryMeta a.cat230,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat230,.safirBox.color230 .mainHeading:before,.slidingWidget.color230 .post .hover:before,.safirBox.color230 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat230,.timelineWidget.color230 .post .time,.advancedPostsWidget2 .sfrCatClr.cat230,.listingWidget.color230 .items a .number,.advancedPostsWidget1.color230 .post .title:before,.advancedPostsWidget4.color230 .post a.more,.advancedPostsWidget5.color230 .post .title:before,.advancedPostsWidget5.color230 .titles .title.active a,.fiveWidget.color230 .leftSide .post .title:before,.commentsWidget.color230 .item .title:before,.safirBox.color230 .safirnavi span,.safirBox.color230 .safirnavi a,.searchWidget.color230 form:before{background:#ed5a78;}.tabbedWidget .tabheading a.color230.active{border-color:#ed5a78;}.safirBox.color223 .mainHeading .icon:before,.safirBox.color223 .post a:hover,.safirCustomMenu.color223 a .icon:before,.tabbedWidget .tabheading a.color223 .icon:before,.searchWidget.color223 button:before,.tabbedWidget .tab.color223 .post .title a:hover{color:#5b963f !important;}#slider .post-container .post .safirCategoryMeta a.cat223,.sliderWidget .post .safirCategoryMeta a.cat223,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat223,.safirBox.color223 .mainHeading:before,.slidingWidget.color223 .post .hover:before,.safirBox.color223 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat223,.timelineWidget.color223 .post .time,.advancedPostsWidget2 .sfrCatClr.cat223,.listingWidget.color223 .items a .number,.advancedPostsWidget1.color223 .post .title:before,.advancedPostsWidget4.color223 .post a.more,.advancedPostsWidget5.color223 .post .title:before,.advancedPostsWidget5.color223 .titles .title.active a,.fiveWidget.color223 .leftSide .post .title:before,.commentsWidget.color223 .item .title:before,.safirBox.color223 .safirnavi span,.safirBox.color223 .safirnavi a,.searchWidget.color223 form:before{background:#5b963f;}.tabbedWidget .tabheading a.color223.active{border-color:#5b963f;}.safirBox.color238 .mainHeading .icon:before,.safirBox.color238 .post a:hover,.safirCustomMenu.color238 a .icon:before,.tabbedWidget .tabheading a.color238 .icon:before,.searchWidget.color238 button:before,.tabbedWidget .tab.color238 .post .title a:hover{color:#30db69 !important;}#slider .post-container .post .safirCategoryMeta a.cat238,.sliderWidget .post .safirCategoryMeta a.cat238,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat238,.safirBox.color238 .mainHeading:before,.slidingWidget.color238 .post .hover:before,.safirBox.color238 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat238,.timelineWidget.color238 .post .time,.advancedPostsWidget2 .sfrCatClr.cat238,.listingWidget.color238 .items a .number,.advancedPostsWidget1.color238 .post .title:before,.advancedPostsWidget4.color238 .post a.more,.advancedPostsWidget5.color238 .post .title:before,.advancedPostsWidget5.color238 .titles .title.active a,.fiveWidget.color238 .leftSide .post .title:before,.commentsWidget.color238 .item .title:before,.safirBox.color238 .safirnavi span,.safirBox.color238 .safirnavi a,.searchWidget.color238 form:before{background:#30db69;}.tabbedWidget .tabheading a.color238.active{border-color:#30db69;}.safirBox.color240 .mainHeading .icon:before,.safirBox.color240 .post a:hover,.safirCustomMenu.color240 a .icon:before,.tabbedWidget .tabheading a.color240 .icon:before,.searchWidget.color240 button:before,.tabbedWidget .tab.color240 .post .title a:hover{color:#e6a835 !important;}#slider .post-container .post .safirCategoryMeta a.cat240,.sliderWidget .post .safirCategoryMeta a.cat240,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat240,.safirBox.color240 .mainHeading:before,.slidingWidget.color240 .post .hover:before,.safirBox.color240 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat240,.timelineWidget.color240 .post .time,.advancedPostsWidget2 .sfrCatClr.cat240,.listingWidget.color240 .items a .number,.advancedPostsWidget1.color240 .post .title:before,.advancedPostsWidget4.color240 .post a.more,.advancedPostsWidget5.color240 .post .title:before,.advancedPostsWidget5.color240 .titles .title.active a,.fiveWidget.color240 .leftSide .post .title:before,.commentsWidget.color240 .item .title:before,.safirBox.color240 .safirnavi span,.safirBox.color240 .safirnavi a,.searchWidget.color240 form:before{background:#e6a835;}.tabbedWidget .tabheading a.color240.active{border-color:#e6a835;}.safirBox.color10 .mainHeading .icon:before,.safirBox.color10 .post a:hover,.safirCustomMenu.color10 a .icon:before,.tabbedWidget .tabheading a.color10 .icon:before,.searchWidget.color10 button:before,.tabbedWidget .tab.color10 .post .title a:hover{color:#8f63af !important;}#slider .post-container .post .safirCategoryMeta a.cat10,.sliderWidget .post .safirCategoryMeta a.cat10,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat10,.safirBox.color10 .mainHeading:before,.slidingWidget.color10 .post .hover:before,.safirBox.color10 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat10,.timelineWidget.color10 .post .time,.advancedPostsWidget2 .sfrCatClr.cat10,.listingWidget.color10 .items a .number,.advancedPostsWidget1.color10 .post .title:before,.advancedPostsWidget4.color10 .post a.more,.advancedPostsWidget5.color10 .post .title:before,.advancedPostsWidget5.color10 .titles .title.active a,.fiveWidget.color10 .leftSide .post .title:before,.commentsWidget.color10 .item .title:before,.safirBox.color10 .safirnavi span,.safirBox.color10 .safirnavi a,.searchWidget.color10 form:before{background:#8f63af;}.tabbedWidget .tabheading a.color10.active{border-color:#8f63af;}.safirBox.color239 .mainHeading .icon:before,.safirBox.color239 .post a:hover,.safirCustomMenu.color239 a .icon:before,.tabbedWidget .tabheading a.color239 .icon:before,.searchWidget.color239 button:before,.tabbedWidget .tab.color239 .post .title a:hover{color:#e61243 !important;}#slider .post-container .post .safirCategoryMeta a.cat239,.sliderWidget .post .safirCategoryMeta a.cat239,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat239,.safirBox.color239 .mainHeading:before,.slidingWidget.color239 .post .hover:before,.safirBox.color239 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat239,.timelineWidget.color239 .post .time,.advancedPostsWidget2 .sfrCatClr.cat239,.listingWidget.color239 .items a .number,.advancedPostsWidget1.color239 .post .title:before,.advancedPostsWidget4.color239 .post a.more,.advancedPostsWidget5.color239 .post .title:before,.advancedPostsWidget5.color239 .titles .title.active a,.fiveWidget.color239 .leftSide .post .title:before,.commentsWidget.color239 .item .title:before,.safirBox.color239 .safirnavi span,.safirBox.color239 .safirnavi a,.searchWidget.color239 form:before{background:#e61243;}.tabbedWidget .tabheading a.color239.active{border-color:#e61243;}.safirBox.color9 .mainHeading .icon:before,.safirBox.color9 .post a:hover,.safirCustomMenu.color9 a .icon:before,.tabbedWidget .tabheading a.color9 .icon:before,.searchWidget.color9 button:before,.tabbedWidget .tab.color9 .post .title a:hover{color:#e0850c !important;}#slider .post-container .post .safirCategoryMeta a.cat9,.sliderWidget .post .safirCategoryMeta a.cat9,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat9,.safirBox.color9 .mainHeading:before,.slidingWidget.color9 .post .hover:before,.safirBox.color9 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat9,.timelineWidget.color9 .post .time,.advancedPostsWidget2 .sfrCatClr.cat9,.listingWidget.color9 .items a .number,.advancedPostsWidget1.color9 .post .title:before,.advancedPostsWidget4.color9 .post a.more,.advancedPostsWidget5.color9 .post .title:before,.advancedPostsWidget5.color9 .titles .title.active a,.fiveWidget.color9 .leftSide .post .title:before,.commentsWidget.color9 .item .title:before,.safirBox.color9 .safirnavi span,.safirBox.color9 .safirnavi a,.searchWidget.color9 form:before{background:#e0850c;}.tabbedWidget .tabheading a.color9.active{border-color:#e0850c;}.safirBox.color14 .mainHeading .icon:before,.safirBox.color14 .post a:hover,.safirCustomMenu.color14 a .icon:before,.tabbedWidget .tabheading a.color14 .icon:before,.searchWidget.color14 button:before,.tabbedWidget .tab.color14 .post .title a:hover{color:#40d6d6 !important;}#slider .post-container .post .safirCategoryMeta a.cat14,.sliderWidget .post .safirCategoryMeta a.cat14,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat14,.safirBox.color14 .mainHeading:before,.slidingWidget.color14 .post .hover:before,.safirBox.color14 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat14,.timelineWidget.color14 .post .time,.advancedPostsWidget2 .sfrCatClr.cat14,.listingWidget.color14 .items a .number,.advancedPostsWidget1.color14 .post .title:before,.advancedPostsWidget4.color14 .post a.more,.advancedPostsWidget5.color14 .post .title:before,.advancedPostsWidget5.color14 .titles .title.active a,.fiveWidget.color14 .leftSide .post .title:before,.commentsWidget.color14 .item .title:before,.safirBox.color14 .safirnavi span,.safirBox.color14 .safirnavi a,.searchWidget.color14 form:before{background:#40d6d6;}.tabbedWidget .tabheading a.color14.active{border-color:#40d6d6;}.safirBox.color231 .mainHeading .icon:before,.safirBox.color231 .post a:hover,.safirCustomMenu.color231 a .icon:before,.tabbedWidget .tabheading a.color231 .icon:before,.searchWidget.color231 button:before,.tabbedWidget .tab.color231 .post .title a:hover{color:#ca7ce6 !important;}#slider .post-container .post .safirCategoryMeta a.cat231,.sliderWidget .post .safirCategoryMeta a.cat231,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat231,.safirBox.color231 .mainHeading:before,.slidingWidget.color231 .post .hover:before,.safirBox.color231 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat231,.timelineWidget.color231 .post .time,.advancedPostsWidget2 .sfrCatClr.cat231,.listingWidget.color231 .items a .number,.advancedPostsWidget1.color231 .post .title:before,.advancedPostsWidget4.color231 .post a.more,.advancedPostsWidget5.color231 .post .title:before,.advancedPostsWidget5.color231 .titles .title.active a,.fiveWidget.color231 .leftSide .post .title:before,.commentsWidget.color231 .item .title:before,.safirBox.color231 .safirnavi span,.safirBox.color231 .safirnavi a,.searchWidget.color231 form:before{background:#ca7ce6;}.tabbedWidget .tabheading a.color231.active{border-color:#ca7ce6;}.safirBox.color228 .mainHeading .icon:before,.safirBox.color228 .post a:hover,.safirCustomMenu.color228 a .icon:before,.tabbedWidget .tabheading a.color228 .icon:before,.searchWidget.color228 button:before,.tabbedWidget .tab.color228 .post .title a:hover{color:#ed3459 !important;}#slider .post-container .post .safirCategoryMeta a.cat228,.sliderWidget .post .safirCategoryMeta a.cat228,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat228,.safirBox.color228 .mainHeading:before,.slidingWidget.color228 .post .hover:before,.safirBox.color228 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat228,.timelineWidget.color228 .post .time,.advancedPostsWidget2 .sfrCatClr.cat228,.listingWidget.color228 .items a .number,.advancedPostsWidget1.color228 .post .title:before,.advancedPostsWidget4.color228 .post a.more,.advancedPostsWidget5.color228 .post .title:before,.advancedPostsWidget5.color228 .titles .title.active a,.fiveWidget.color228 .leftSide .post .title:before,.commentsWidget.color228 .item .title:before,.safirBox.color228 .safirnavi span,.safirBox.color228 .safirnavi a,.searchWidget.color228 form:before{background:#ed3459;}.tabbedWidget .tabheading a.color228.active{border-color:#ed3459;}.safirBox.color1038 .mainHeading .icon:before,.safirBox.color1038 .post a:hover,.safirCustomMenu.color1038 a .icon:before,.tabbedWidget .tabheading a.color1038 .icon:before,.searchWidget.color1038 button:before,.tabbedWidget .tab.color1038 .post .title a:hover{color:#334368 !important;}#slider .post-container .post .safirCategoryMeta a.cat1038,.sliderWidget .post .safirCategoryMeta a.cat1038,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat1038,.safirBox.color1038 .mainHeading:before,.slidingWidget.color1038 .post .hover:before,.safirBox.color1038 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat1038,.timelineWidget.color1038 .post .time,.advancedPostsWidget2 .sfrCatClr.cat1038,.listingWidget.color1038 .items a .number,.advancedPostsWidget1.color1038 .post .title:before,.advancedPostsWidget4.color1038 .post a.more,.advancedPostsWidget5.color1038 .post .title:before,.advancedPostsWidget5.color1038 .titles .title.active a,.fiveWidget.color1038 .leftSide .post .title:before,.commentsWidget.color1038 .item .title:before,.safirBox.color1038 .safirnavi span,.safirBox.color1038 .safirnavi a,.searchWidget.color1038 form:before{background:#334368;}.tabbedWidget .tabheading a.color1038.active{border-color:#334368;}.safirBox.color229 .mainHeading .icon:before,.safirBox.color229 .post a:hover,.safirCustomMenu.color229 a .icon:before,.tabbedWidget .tabheading a.color229 .icon:before,.searchWidget.color229 button:before,.tabbedWidget .tab.color229 .post .title a:hover{color:#e05e53 !important;}#slider .post-container .post .safirCategoryMeta a.cat229,.sliderWidget .post .safirCategoryMeta a.cat229,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat229,.safirBox.color229 .mainHeading:before,.slidingWidget.color229 .post .hover:before,.safirBox.color229 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat229,.timelineWidget.color229 .post .time,.advancedPostsWidget2 .sfrCatClr.cat229,.listingWidget.color229 .items a .number,.advancedPostsWidget1.color229 .post .title:before,.advancedPostsWidget4.color229 .post a.more,.advancedPostsWidget5.color229 .post .title:before,.advancedPostsWidget5.color229 .titles .title.active a,.fiveWidget.color229 .leftSide .post .title:before,.commentsWidget.color229 .item .title:before,.safirBox.color229 .safirnavi span,.safirBox.color229 .safirnavi a,.searchWidget.color229 form:before{background:#e05e53;}.tabbedWidget .tabheading a.color229.active{border-color:#e05e53;}.safirBox.color237 .mainHeading .icon:before,.safirBox.color237 .post a:hover,.safirCustomMenu.color237 a .icon:before,.tabbedWidget .tabheading a.color237 .icon:before,.searchWidget.color237 button:before,.tabbedWidget .tab.color237 .post .title a:hover{color:#375ae6 !important;}#slider .post-container .post .safirCategoryMeta a.cat237,.sliderWidget .post .safirCategoryMeta a.cat237,.advancedPostsWidget1 .post .detail .safirCategoryMeta a.cat237,.safirBox.color237 .mainHeading:before,.slidingWidget.color237 .post .hover:before,.safirBox.color237 .owl-nav div,.advancedPostsWidget3 .post .detail .safirCategoryMeta a.cat237,.timelineWidget.color237 .post .time,.advancedPostsWidget2 .sfrCatClr.cat237,.listingWidget.color237 .items a .number,.advancedPostsWidget1.color237 .post .title:before,.advancedPostsWidget4.color237 .post a.more,.advancedPostsWidget5.color237 .post .title:before,.advancedPostsWidget5.color237 .titles .title.active a,.fiveWidget.color237 .leftSide .post .title:before,.commentsWidget.color237 .item .title:before,.safirBox.color237 .safirnavi span,.safirBox.color237 .safirnavi a,.searchWidget.color237 form:before{background:#375ae6;}.tabbedWidget .tabheading a.color237.active{border-color:#375ae6;}#menu li.ev>a span.icon:before{content:'\E010';display:inline-block;}.safirCustomMenu li.ev .icon:before,#mobilemenu li.ev>a>span.icon:before{content:'\E010';display:block;}.slidingWidget.withIcon.ev .hover span:before,.mainHeading .icon.ev:before,.tabbedWidget .tabheading a .icon.ev:before,footer .footermenu2 li.ev a:before{content:'\E010';}#menu li.power>a span.icon:before{content:'\E000';display:inline-block;}.safirCustomMenu li.power .icon:before,#mobilemenu li.power>a>span.icon:before{content:'\E000';display:block;}.slidingWidget.withIcon.power .hover span:before,.mainHeading .icon.power:before,.tabbedWidget .tabheading a .icon.power:before,footer .footermenu2 li.power a:before{content:'\E000';}#menu li.yaprak>a span.icon:before{content:'\E002';display:inline-block;}.safirCustomMenu li.yaprak .icon:before,#mobilemenu li.yaprak>a>span.icon:before{content:'\E002';display:block;}.slidingWidget.withIcon.yaprak .hover span:before,.mainHeading .icon.yaprak:before,.tabbedWidget .tabheading a .icon.yaprak:before,footer .footermenu2 li.yaprak a:before{content:'\E002';}#menu li.yemek>a span.icon:before{content:'\E003';display:inline-block;}.safirCustomMenu li.yemek .icon:before,#mobilemenu li.yemek>a>span.icon:before{content:'\E003';display:block;}.slidingWidget.withIcon.yemek .hover span:before,.mainHeading .icon.yemek:before,.tabbedWidget .tabheading a .icon.yemek:before,footer .footermenu2 li.yemek a:before{content:'\E003';}#menu li.egitim>a span.icon:before{content:'\E005';display:inline-block;}.safirCustomMenu li.egitim .icon:before,#mobilemenu li.egitim>a>span.icon:before{content:'\E005';display:block;}.slidingWidget.withIcon.egitim .hover span:before,.mainHeading .icon.egitim:before,.tabbedWidget .tabheading a .icon.egitim:before,footer .footermenu2 li.egitim a:before{content:'\E005';}#menu li.araba>a span.icon:before{content:'\E035';display:inline-block;}.safirCustomMenu li.araba .icon:before,#mobilemenu li.araba>a>span.icon:before{content:'\E035';display:block;}.slidingWidget.withIcon.araba .hover span:before,.mainHeading .icon.araba:before,.tabbedWidget .tabheading a .icon.araba:before,footer .footermenu2 li.araba a:before{content:'\E035';}#menu li.bilgi>a span.icon:before{content:'\E007';display:inline-block;}.safirCustomMenu li.bilgi .icon:before,#mobilemenu li.bilgi>a>span.icon:before{content:'\E007';display:block;}.slidingWidget.withIcon.bilgi .hover span:before,.mainHeading .icon.bilgi:before,.tabbedWidget .tabheading a .icon.bilgi:before,footer .footermenu2 li.bilgi a:before{content:'\E007';}#menu li.nota>a span.icon:before{content:'\E009';display:inline-block;}.safirCustomMenu li.nota .icon:before,#mobilemenu li.nota>a>span.icon:before{content:'\E009';display:block;}.slidingWidget.withIcon.nota .hover span:before,.mainHeading .icon.nota:before,.tabbedWidget .tabheading a .icon.nota:before,footer .footermenu2 li.nota a:before{content:'\E009';}#menu li.kadin>a span.icon:before{content:'\E00A';display:inline-block;}.safirCustomMenu li.kadin .icon:before,#mobilemenu li.kadin>a>span.icon:before{content:'\E00A';display:block;}.slidingWidget.withIcon.kadin .hover span:before,.mainHeading .icon.kadin:before,.tabbedWidget .tabheading a .icon.kadin:before,footer .footermenu2 li.kadin a:before{content:'\E00A';}#menu li.kalp>a span.icon:before{content:'\E00B';display:inline-block;}.safirCustomMenu li.kalp .icon:before,#mobilemenu li.kalp>a>span.icon:before{content:'\E00B';display:block;}.slidingWidget.withIcon.kalp .hover span:before,.mainHeading .icon.kalp:before,.tabbedWidget .tabheading a .icon.kalp:before,footer .footermenu2 li.kalp a:before{content:'\E00B';}#menu li.kitap>a span.icon:before{content:'\E00C';display:inline-block;}.safirCustomMenu li.kitap .icon:before,#mobilemenu li.kitap>a>span.icon:before{content:'\E00C';display:block;}.slidingWidget.withIcon.kitap .hover span:before,.mainHeading .icon.kitap:before,.tabbedWidget .tabheading a .icon.kitap:before,footer .footermenu2 li.kitap a:before{content:'\E00C';}#menu li.kullanici>a span.icon:before{content:'\E00F';display:inline-block;}.safirCustomMenu li.kullanici .icon:before,#mobilemenu li.kullanici>a>span.icon:before{content:'\E00F';display:block;}.slidingWidget.withIcon.kullanici .hover span:before,.mainHeading .icon.kullanici:before,.tabbedWidget .tabheading a .icon.kullanici:before,footer .footermenu2 li.kullanici a:before{content:'\E00F';}#menu li.alinti>a span.icon:before{content:'\E011';display:inline-block;}.safirCustomMenu li.alinti .icon:before,#mobilemenu li.alinti>a>span.icon:before{content:'\E011';display:block;}.slidingWidget.withIcon.alinti .hover span:before,.mainHeading .icon.alinti:before,.tabbedWidget .tabheading a .icon.alinti:before,footer .footermenu2 li.alinti a:before{content:'\E011';}#menu li.tamir>a span.icon:before{content:'\E013';display:inline-block;}.safirCustomMenu li.tamir .icon:before,#mobilemenu li.tamir>a>span.icon:before{content:'\E013';display:block;}.slidingWidget.withIcon.tamir .hover span:before,.mainHeading .icon.tamir:before,.tabbedWidget .tabheading a .icon.tamir:before,footer .footermenu2 li.tamir a:before{content:'\E013';}#menu li.ucak>a span.icon:before{content:'\E014';display:inline-block;}.safirCustomMenu li.ucak .icon:before,#mobilemenu li.ucak>a>span.icon:before{content:'\E014';display:block;}.slidingWidget.withIcon.ucak .hover span:before,.mainHeading .icon.ucak:before,.tabbedWidget .tabheading a .icon.ucak:before,footer .footermenu2 li.ucak a:before{content:'\E014';}#menu li.mercek>a span.icon:before{content:'\E028';display:inline-block;}.safirCustomMenu li.mercek .icon:before,#mobilemenu li.mercek>a>span.icon:before{content:'\E028';display:block;}.slidingWidget.withIcon.mercek .hover span:before,.mainHeading .icon.mercek:before,.tabbedWidget .tabheading a .icon.mercek:before,footer .footermenu2 li.mercek a:before{content:'\E028';}#menu li.at>a span.icon:before{content:'\E017';display:inline-block;}.safirCustomMenu li.at .icon:before,#mobilemenu li.at>a>span.icon:before{content:'\E017';display:block;}.slidingWidget.withIcon.at .hover span:before,.mainHeading .icon.at:before,.tabbedWidget .tabheading a .icon.at:before,footer .footermenu2 li.at a:before{content:'\E017';}#menu li.yildiz>a span.icon:before{content:'\E018';display:inline-block;}.safirCustomMenu li.yildiz .icon:before,#mobilemenu li.yildiz>a>span.icon:before{content:'\E018';display:block;}.slidingWidget.withIcon.yildiz .hover span:before,.mainHeading .icon.yildiz:before,.tabbedWidget .tabheading a .icon.yildiz:before,footer .footermenu2 li.yildiz a:before{content:'\E018';}#menu li.whatsapp>a span.icon:before{content:'\E019';display:inline-block;}.safirCustomMenu li.whatsapp .icon:before,#mobilemenu li.whatsapp>a>span.icon:before{content:'\E019';display:block;}.slidingWidget.withIcon.whatsapp .hover span:before,.mainHeading .icon.whatsapp:before,.tabbedWidget .tabheading a .icon.whatsapp:before,footer .footermenu2 li.whatsapp a:before{content:'\E019';}#menu li.mouse>a span.icon:before{content:'\E01A';display:inline-block;}.safirCustomMenu li.mouse .icon:before,#mobilemenu li.mouse>a>span.icon:before{content:'\E01A';display:block;}.slidingWidget.withIcon.mouse .hover span:before,.mainHeading .icon.mouse:before,.tabbedWidget .tabheading a .icon.mouse:before,footer .footermenu2 li.mouse a:before{content:'\E01A';}#menu li.ceptelefonu>a span.icon:before{content:'\E049';display:inline-block;}.safirCustomMenu li.ceptelefonu .icon:before,#mobilemenu li.ceptelefonu>a>span.icon:before{content:'\E049';display:block;}.slidingWidget.withIcon.ceptelefonu .hover span:before,.mainHeading .icon.ceptelefonu:before,.tabbedWidget .tabheading a .icon.ceptelefonu:before,footer .footermenu2 li.ceptelefonu a:before{content:'\E049';}#menu li.monitor>a span.icon:before{content:'\E01B';display:inline-block;}.safirCustomMenu li.monitor .icon:before,#mobilemenu li.monitor>a>span.icon:before{content:'\E01B';display:block;}.slidingWidget.withIcon.monitor .hover span:before,.mainHeading .icon.monitor:before,.tabbedWidget .tabheading a .icon.monitor:before,footer .footermenu2 li.monitor a:before{content:'\E01B';}#menu li.dunya>a span.icon:before{content:'\E01C';display:inline-block;}.safirCustomMenu li.dunya .icon:before,#mobilemenu li.dunya>a>span.icon:before{content:'\E01C';display:block;}.slidingWidget.withIcon.dunya .hover span:before,.mainHeading .icon.dunya:before,.tabbedWidget .tabheading a .icon.dunya:before,footer .footermenu2 li.dunya a:before{content:'\E01C';}#menu li.canta>a span.icon:before{content:'\E01E';display:inline-block;}.safirCustomMenu li.canta .icon:before,#mobilemenu li.canta>a>span.icon:before{content:'\E01E';display:block;}.slidingWidget.withIcon.canta .hover span:before,.mainHeading .icon.canta:before,.tabbedWidget .tabheading a .icon.canta:before,footer .footermenu2 li.canta a:before{content:'\E01E';}#menu li.gulenyuz>a span.icon:before{content:'\E01F';display:inline-block;}.safirCustomMenu li.gulenyuz .icon:before,#mobilemenu li.gulenyuz>a>span.icon:before{content:'\E01F';display:block;}.slidingWidget.withIcon.gulenyuz .hover span:before,.mainHeading .icon.gulenyuz:before,.tabbedWidget .tabheading a .icon.gulenyuz:before,footer .footermenu2 li.gulenyuz a:before{content:'\E01F';}#menu li.soru>a span.icon:before{content:'\E020';display:inline-block;}.safirCustomMenu li.soru .icon:before,#mobilemenu li.soru>a>span.icon:before{content:'\E020';display:block;}.slidingWidget.withIcon.soru .hover span:before,.mainHeading .icon.soru:before,.tabbedWidget .tabheading a .icon.soru:before,footer .footermenu2 li.soru a:before{content:'\E020';}#menu li.duyuru>a span.icon:before{content:'\E022';display:inline-block;}.safirCustomMenu li.duyuru .icon:before,#mobilemenu li.duyuru>a>span.icon:before{content:'\E022';display:block;}.slidingWidget.withIcon.duyuru .hover span:before,.mainHeading .icon.duyuru:before,.tabbedWidget .tabheading a .icon.duyuru:before,footer .footermenu2 li.duyuru a:before{content:'\E022';}#menu li.saat>a span.icon:before{content:'\E023';display:inline-block;}.safirCustomMenu li.saat .icon:before,#mobilemenu li.saat>a>span.icon:before{content:'\E023';display:block;}.slidingWidget.withIcon.saat .hover span:before,.mainHeading .icon.saat:before,.tabbedWidget .tabheading a .icon.saat:before,footer .footermenu2 li.saat a:before{content:'\E023';}#menu li.yorum>a span.icon:before{content:'\E008';display:inline-block;}.safirCustomMenu li.yorum .icon:before,#mobilemenu li.yorum>a>span.icon:before{content:'\E008';display:block;}.slidingWidget.withIcon.yorum .hover span:before,.mainHeading .icon.yorum:before,.tabbedWidget .tabheading a .icon.yorum:before,footer .footermenu2 li.yorum a:before{content:'\E008';}#menu li.takvim>a span.icon:before{content:'\E025';display:inline-block;}.safirCustomMenu li.takvim .icon:before,#mobilemenu li.takvim>a>span.icon:before{content:'\E025';display:block;}.slidingWidget.withIcon.takvim .hover span:before,.mainHeading .icon.takvim:before,.tabbedWidget .tabheading a .icon.takvim:before,footer .footermenu2 li.takvim a:before{content:'\E025';}#menu li.ok>a span.icon:before{content:'\E027';display:inline-block;}.safirCustomMenu li.ok .icon:before,#mobilemenu li.ok>a>span.icon:before{content:'\E027';display:block;}.slidingWidget.withIcon.ok .hover span:before,.mainHeading .icon.ok:before,.tabbedWidget .tabheading a .icon.ok:before,footer .footermenu2 li.ok a:before{content:'\E027';}#menu li.kalem>a span.icon:before{content:'\E029';display:inline-block;}.safirCustomMenu li.kalem .icon:before,#mobilemenu li.kalem>a>span.icon:before{content:'\E029';display:block;}.slidingWidget.withIcon.kalem .hover span:before,.mainHeading .icon.kalem:before,.tabbedWidget .tabheading a .icon.kalem:before,footer .footermenu2 li.kalem a:before{content:'\E029';}#menu li.rastgele>a span.icon:before{content:'\E031';display:inline-block;}.safirCustomMenu li.rastgele .icon:before,#mobilemenu li.rastgele>a>span.icon:before{content:'\E031';display:block;}.slidingWidget.withIcon.rastgele .hover span:before,.mainHeading .icon.rastgele:before,.tabbedWidget .tabheading a .icon.rastgele:before,footer .footermenu2 li.rastgele a:before{content:'\E031';}#menu li.ayar>a span.icon:before{content:'\E032';display:inline-block;}.safirCustomMenu li.ayar .icon:before,#mobilemenu li.ayar>a>span.icon:before{content:'\E032';display:block;}.slidingWidget.withIcon.ayar .hover span:before,.mainHeading .icon.ayar:before,.tabbedWidget .tabheading a .icon.ayar:before,footer .footermenu2 li.ayar a:before{content:'\E032';}#menu li.kahve>a span.icon:before{content:'\E034';display:inline-block;}.safirCustomMenu li.kahve .icon:before,#mobilemenu li.kahve>a>span.icon:before{content:'\E034';display:block;}.slidingWidget.withIcon.kahve .hover span:before,.mainHeading .icon.kahve:before,.tabbedWidget .tabheading a .icon.kahve:before,footer .footermenu2 li.kahve a:before{content:'\E034';}#menu li.sinema>a span.icon:before{content:'\E038';display:inline-block;}.safirCustomMenu li.sinema .icon:before,#mobilemenu li.sinema>a>span.icon:before{content:'\E038';display:block;}.slidingWidget.withIcon.sinema .hover span:before,.mainHeading .icon.sinema:before,.tabbedWidget .tabheading a .icon.sinema:before,footer .footermenu2 li.sinema a:before{content:'\E038';}#menu li.oyun>a span.icon:before{content:'\E039';display:inline-block;}.safirCustomMenu li.oyun .icon:before,#mobilemenu li.oyun>a>span.icon:before{content:'\E039';display:block;}.slidingWidget.withIcon.oyun .hover span:before,.mainHeading .icon.oyun:before,.tabbedWidget .tabheading a .icon.oyun:before,footer .footermenu2 li.oyun a:before{content:'\E039';}#menu li.eglence>a span.icon:before{content:'\E03A';display:inline-block;}.safirCustomMenu li.eglence .icon:before,#mobilemenu li.eglence>a>span.icon:before{content:'\E03A';display:block;}.slidingWidget.withIcon.eglence .hover span:before,.mainHeading .icon.eglence:before,.tabbedWidget .tabheading a .icon.eglence:before,footer .footermenu2 li.eglence a:before{content:'\E03A';}#menu li.bilim>a span.icon:before{content:'\E015';display:inline-block;}.safirCustomMenu li.bilim .icon:before,#mobilemenu li.bilim>a>span.icon:before{content:'\E015';display:block;}.slidingWidget.withIcon.bilim .hover span:before,.mainHeading .icon.bilim:before,.tabbedWidget .tabheading a .icon.bilim:before,footer .footermenu2 li.bilim a:before{content:'\E015';}#menu li.menu1>a span.icon:before{content:'\E026';display:inline-block;}.safirCustomMenu li.menu1 .icon:before,#mobilemenu li.menu1>a>span.icon:before{content:'\E026';display:block;}.slidingWidget.withIcon.menu1 .hover span:before,.mainHeading .icon.menu1:before,.tabbedWidget .tabheading a .icon.menu1:before,footer .footermenu2 li.menu1 a:before{content:'\E026';}#menu li.menu2>a span.icon:before{content:'\E03B';display:inline-block;}.safirCustomMenu li.menu2 .icon:before,#mobilemenu li.menu2>a>span.icon:before{content:'\E03B';display:block;}.slidingWidget.withIcon.menu2 .hover span:before,.mainHeading .icon.menu2:before,.tabbedWidget .tabheading a .icon.menu2:before,footer .footermenu2 li.menu2 a:before{content:'\E03B';}#menu li.wifi>a span.icon:before{content:'\E00D';display:inline-block;}.safirCustomMenu li.wifi .icon:before,#mobilemenu li.wifi>a>span.icon:before{content:'\E00D';display:block;}.slidingWidget.withIcon.wifi .hover span:before,.mainHeading .icon.wifi:before,.tabbedWidget .tabheading a .icon.wifi:before,footer .footermenu2 li.wifi a:before{content:'\E00D';}#menu li.foto>a span.icon:before{content:'\E012';display:inline-block;}.safirCustomMenu li.foto .icon:before,#mobilemenu li.foto>a>span.icon:before{content:'\E012';display:block;}.slidingWidget.withIcon.foto .hover span:before,.mainHeading .icon.foto:before,.tabbedWidget .tabheading a .icon.foto:before,footer .footermenu2 li.foto a:before{content:'\E012';}#menu li.video>a span.icon:before{content:'\E021';display:inline-block;}.safirCustomMenu li.video .icon:before,#mobilemenu li.video>a>span.icon:before{content:'\E021';display:block;}.slidingWidget.withIcon.video .hover span:before,.mainHeading .icon.video:before,.tabbedWidget .tabheading a .icon.video:before,footer .footermenu2 li.video a:before{content:'\E021';}#menu li.ates>a span.icon:before{content:'\E03E';display:inline-block;}.safirCustomMenu li.ates .icon:before,#mobilemenu li.ates>a>span.icon:before{content:'\E03E';display:block;}.slidingWidget.withIcon.ates .hover span:before,.mainHeading .icon.ates:before,.tabbedWidget .tabheading a .icon.ates:before,footer .footermenu2 li.ates a:before{content:'\E03E';}#menu li.gozluk>a span.icon:before{content:'\E03C';display:inline-block;}.safirCustomMenu li.gozluk .icon:before,#mobilemenu li.gozluk>a>span.icon:before{content:'\E03C';display:block;}.slidingWidget.withIcon.gozluk .hover span:before,.mainHeading .icon.gozluk:before,.tabbedWidget .tabheading a .icon.gozluk:before,footer .footermenu2 li.gozluk a:before{content:'\E03C';}#menu li.arti>a span.icon:before{content:'\E004';display:inline-block;}.safirCustomMenu li.arti .icon:before,#mobilemenu li.arti>a>span.icon:before{content:'\E004';display:block;}.slidingWidget.withIcon.arti .hover span:before,.mainHeading .icon.arti:before,.tabbedWidget .tabheading a .icon.arti:before,footer .footermenu2 li.arti a:before{content:'\E004';}#menu li.klasor>a span.icon:before{content:'\E044';display:inline-block;}.safirCustomMenu li.klasor .icon:before,#mobilemenu li.klasor>a>span.icon:before{content:'\E044';display:block;}.slidingWidget.withIcon.klasor .hover span:before,.mainHeading .icon.klasor:before,.tabbedWidget .tabheading a .icon.klasor:before,footer .footermenu2 li.klasor a:before{content:'\E044';}#menu li.futbol>a span.icon:before{content:'\E00E';display:inline-block;}.safirCustomMenu li.futbol .icon:before,#mobilemenu li.futbol>a>span.icon:before{content:'\E00E';display:block;}.slidingWidget.withIcon.futbol .hover span:before,.mainHeading .icon.futbol:before,.tabbedWidget .tabheading a .icon.futbol:before,footer .footermenu2 li.futbol a:before{content:'\E00E';}#menu li.basket>a span.icon:before{content:'\E001';display:inline-block;}.safirCustomMenu li.basket .icon:before,#mobilemenu li.basket>a>span.icon:before{content:'\E001';display:block;}.slidingWidget.withIcon.basket .hover span:before,.mainHeading .icon.basket:before,.tabbedWidget .tabheading a .icon.basket:before,footer .footermenu2 li.basket a:before{content:'\E001';}#menu li.ps>a span.icon:before{content:'\E040';display:inline-block;}.safirCustomMenu li.ps .icon:before,#mobilemenu li.ps>a>span.icon:before{content:'\E040';display:block;}.slidingWidget.withIcon.ps .hover span:before,.mainHeading .icon.ps:before,.tabbedWidget .tabheading a .icon.ps:before,footer .footermenu2 li.ps a:before{content:'\E040';}#menu li.Xbox>a span.icon:before{content:'\E041';display:inline-block;}.safirCustomMenu li.Xbox .icon:before,#mobilemenu li.Xbox>a>span.icon:before{content:'\E041';display:block;}.slidingWidget.withIcon.Xbox .hover span:before,.mainHeading .icon.Xbox:before,.tabbedWidget .tabheading a .icon.Xbox:before,footer .footermenu2 li.Xbox a:before{content:'\E041';}#menu li.apple>a span.icon:before{content:'\E042';display:inline-block;}.safirCustomMenu li.apple .icon:before,#mobilemenu li.apple>a>span.icon:before{content:'\E042';display:block;}.slidingWidget.withIcon.apple .hover span:before,.mainHeading .icon.apple:before,.tabbedWidget .tabheading a .icon.apple:before,footer .footermenu2 li.apple a:before{content:'\E042';}#menu li.windows>a span.icon:before{content:'\E043';display:inline-block;}.safirCustomMenu li.windows .icon:before,#mobilemenu li.windows>a>span.icon:before{content:'\E043';display:block;}.slidingWidget.withIcon.windows .hover span:before,.mainHeading .icon.windows:before,.tabbedWidget .tabheading a .icon.windows:before,footer .footermenu2 li.windows a:before{content:'\E043';}#menu li.saglik>a span.icon:before{content:'\E045';display:inline-block;}.safirCustomMenu li.saglik .icon:before,#mobilemenu li.saglik>a>span.icon:before{content:'\E045';display:block;}.slidingWidget.withIcon.saglik .hover span:before,.mainHeading .icon.saglik:before,.tabbedWidget .tabheading a .icon.saglik:before,footer .footermenu2 li.saglik a:before{content:'\E045';}#menu li.moda>a span.icon:before{content:'\E046';display:inline-block;}.safirCustomMenu li.moda .icon:before,#mobilemenu li.moda>a>span.icon:before{content:'\E046';display:block;}.slidingWidget.withIcon.moda .hover span:before,.mainHeading .icon.moda:before,.tabbedWidget .tabheading a .icon.moda:before,footer .footermenu2 li.moda a:before{content:'\E046';}#menu li.astroloji>a span.icon:before{content:'\E047';display:inline-block;}.safirCustomMenu li.astroloji .icon:before,#mobilemenu li.astroloji>a>span.icon:before{content:'\E047';display:block;}.slidingWidget.withIcon.astroloji .hover span:before,.mainHeading .icon.astroloji:before,.tabbedWidget .tabheading a .icon.astroloji:before,footer .footermenu2 li.astroloji a:before{content:'\E047';}#menu li.bitcoin>a span.icon:before{content:'\E048';display:inline-block;}.safirCustomMenu li.bitcoin .icon:before,#mobilemenu li.bitcoin>a>span.icon:before{content:'\E048';display:block;}.slidingWidget.withIcon.bitcoin .hover span:before,.mainHeading .icon.bitcoin:before,.tabbedWidget .tabheading a .icon.bitcoin:before,footer .footermenu2 li.bitcoin a:before{content:'\E048';}#menu li.iletisim>a span.icon:before{content:'\E04D';display:inline-block;}.safirCustomMenu li.iletisim .icon:before,#mobilemenu li.iletisim>a>span.icon:before{content:'\E04D';display:block;}.slidingWidget.withIcon.iletisim .hover span:before,.mainHeading .icon.iletisim:before,.tabbedWidget .tabheading a .icon.iletisim:before,footer .footermenu2 li.iletisim a:before{content:'\E04D';}</style></head>
+<body class="post-template-default single single-post postid-2635 single-format-standard desktop stickySidebar cookies-not-set"><script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+</script>
+
+<div id="hamburgermenu"> 
+	<div class="logoBlock">
+		<a href="https://blogkod.com">
+			<img src="http://blogkod.com/wp-content/uploads/2018/12/blogkodlogo.png" alt="BlogKod" title="BlogKod - Anasayfa" width="300" height="80" style="width:300px; height:80px;" />
+		</a>
+		<span class="close"></span>
+	</div>
+
+	<div id="mobilemenuContainer">	
+		<div id="mobilemenu">
+			<ul id="menu-mobil-menu" class="menu"><li id="menu-item-1476" class="ev menu-item menu-item-type-post_type menu-item-object-page menu-item-1476"><a href="https://blogkod.com/?page_id=751">Anasayfa</a></li>
+<li id="menu-item-3611" class="canta menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3611 color226"><a href="https://blogkod.com/5-siniflar/">5. Sınıflar Ders Notları</a></li>
+<li id="menu-item-3612" class="kitap menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3612 color227"><a href="https://blogkod.com/6-siniflar/">6. Sınıflar Ders Notları</a></li>
+<li id="menu-item-1474" class="alinti menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1474 color224"><a href="https://blogkod.com/arduino/">Arduino</a></li>
+<li id="menu-item-2204" class="gulenyuz menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2204 color10"><a href="https://blogkod.com/mblock/">mBlock</a></li>
+<li id="menu-item-2206" class="rastgele menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2206 color228"><a href="https://blogkod.com/tinkercad/">TinkerCAD</a></li>
+<li id="menu-item-2205" class="monitor menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2205 color9"><a href="https://blogkod.com/scratch/">Scratch</a></li>
+<li id="menu-item-3610" class="egitim menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3610 color222"><a href="https://blogkod.com/ders-notlari/">Ders Notları</a></li>
+<li id="menu-item-4071" class="takvim menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4071 color241"><a href="https://blogkod.com/calisma-yapraklari/">Çalışma Yaprakları</a></li>
+<li id="menu-item-2388" class="kalem menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2388 color223"><a href="https://blogkod.com/etkinlik-odevler/">Etkinlik ve Ödevler</a></li>
+<li id="menu-item-2389" class="video menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2389 color229"><a href="https://blogkod.com/video/">Videolar</a></li>
+<li id="menu-item-1475" class="iletisim menu-item menu-item-type-post_type menu-item-object-page menu-item-1475"><a href="https://blogkod.com/iletisim/">İletişim</a></li>
+</ul>		</div>
+	</div>
+
+	<div id="mobileSocial">
+		<ul class="safirSocial">
+	<li class="facebook">
+			<a rel="external" href="https://www.facebook.com/blogkodcom" title="Facebook"></a></li><li class="twitter">
+			<a rel="external" href="https://twitter.com/blogkodcom" title="Twitter"></a></li><li class="youtube">
+			<a rel="external" href="https://www.youtube.com/channel/UC0jSeXvADGX5atXPWMrB-XQ" title="Youtube"></a></li><li class="pinterest">
+			<a rel="external" href="https://tr.pinterest.com/blogkodcom/" title="Pinterest"></a></li><li class="instagram">
+			<a rel="external" href="https://www.instagram.com/blogkodcom" title="Instagram"></a></li><li class="linkedin">
+			<a rel="external" href="https://www.linkedin.com/in/blogkodcom/" title="Linkedin"></a></li></ul>	</div>
+</div>
+<div id="overlay"></div>
+<div id="safirPage">
+<header>
+			<div id="topbar">
+			<div class="innerContainer">
+				<nav id="topmenu">
+					<ul id="menu-logo-ustu" class="menu"><li id="menu-item-757" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-757"><a href="https://blogkod.com/">Anasayfa</a></li>
+<li id="menu-item-801" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-801 color237"><a href="https://blogkod.com/word-uygulamalari/">Word Uygulamaları</a></li>
+<li id="menu-item-802" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-802 color238"><a href="https://blogkod.com/excel-uygulamalari/">Excel Uygulamaları</a></li>
+<li id="menu-item-803" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-803 color239"><a href="https://blogkod.com/powerpoint-uygulamalari/">Powerpoint Uygulamaları</a></li>
+<li id="menu-item-813" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-813 color241"><a href="https://blogkod.com/calisma-yapraklari/">Çalışma Yaprakları</a></li>
+<li id="menu-item-804" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-804 color240"><a href="https://blogkod.com/halk-egitim-kurslari/">Halk Eğitim Kursları</a></li>
+<li id="menu-item-4362" class="target_blank menu-item menu-item-type-custom menu-item-object-custom menu-item-4362"><a title="Devre Kurulum Aracı" href="https://phet.colorado.edu/sims/html/circuit-construction-kit-dc/latest/circuit-construction-kit-dc_tr.html">DKA</a></li>
+</ul>				</nav>
+				<div id="headerSocial">
+					<ul class="safirSocial">
+	<li class="facebook">
+			<a rel="external" href="https://www.facebook.com/blogkodcom" title="Facebook"></a></li><li class="twitter">
+			<a rel="external" href="https://twitter.com/blogkodcom" title="Twitter"></a></li><li class="youtube">
+			<a rel="external" href="https://www.youtube.com/channel/UC0jSeXvADGX5atXPWMrB-XQ" title="Youtube"></a></li><li class="pinterest">
+			<a rel="external" href="https://tr.pinterest.com/blogkodcom/" title="Pinterest"></a></li><li class="instagram">
+			<a rel="external" href="https://www.instagram.com/blogkodcom" title="Instagram"></a></li><li class="linkedin">
+			<a rel="external" href="https://www.linkedin.com/in/blogkodcom/" title="Linkedin"></a></li></ul>				</div>
+			</div>
+		</div>
+		<div id="header-cont">
+		<div class="innerContainer">
+			<div id="mobileHeader">	
+				<div class="toggleMenu"></div>
+				<div id="header-logo">
+										<span><a href="https://blogkod.com"><img src="http://blogkod.com/wp-content/uploads/2018/12/blogkodlogo.png" alt="BlogKod" title="BlogKod - Anasayfa" width="300" height="80" style="width:300px; height:80px;" /></a></span>				</div>
+									<div class="searchButton"></div>
+							</div>
+							<div id="search">
+					<div class="searchButton"></div>
+					<div class="searchForm">
+						<div class="searchWidget">
+							<form method="get" class="safir-searchform" action="https://blogkod.com">
+								<input type="text" name="s" value="Arama yap..." onblur="if(this.value=='') this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue) this.value='';" />
+								<button></button>
+							</form>
+						</div>
+					</div>
+				</div>
+						<nav id="mainMenu">
+				<div id="menuGroup">
+					<div id="menu">
+						<ul id="menu-ust-menu" class="menu"><li id="menu-item-747" class="ev menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-747"><a href="https://blogkod.com/">Anasayfa</a></li>
+<li id="menu-item-732" class="kitap menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-732 color222"><a href="https://blogkod.com/ders-notlari/">Ders Notları</a>
+<ul class="sub-menu">
+	<li id="menu-item-773" class="mouse menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-773 color231"><a href="https://blogkod.com/sunumlar/">Sunumlar</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1509" class="canta menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1509 color510"><a href="https://blogkod.com/sunumlar/5-siniflar-sunumlar/">5. Sınıflar Sunumlar</a>
+		<ul class="sub-menu">
+			<li id="menu-item-1510" class="yaprak menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1510 color512"><a href="https://blogkod.com/sunumlar/5-siniflar-sunumlar/1-donem/">1. Dönem</a></li>
+			<li id="menu-item-1511" class="klasor menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1511 color513"><a href="https://blogkod.com/sunumlar/5-siniflar-sunumlar/2-donem/">2. Dönem</a></li>
+		</ul>
+</li>
+		<li id="menu-item-1512" class="ok menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-1512 color511"><a href="https://blogkod.com/sunumlar/6-siniflar-sunumlar/">6. Sınıflar Sunumlar</a>
+		<ul class="sub-menu">
+			<li id="menu-item-1513" class="bilim menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1513 color514"><a href="https://blogkod.com/sunumlar/6-siniflar-sunumlar/1-donem-6-siniflar-sunumlar/">1. Dönem</a></li>
+			<li id="menu-item-1514" class="gozluk menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-1514 color515"><a href="https://blogkod.com/sunumlar/6-siniflar-sunumlar/2-donem-6-siniflar-sunumlar/">2. Dönem</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+	<li id="menu-item-772" class="video menu-item menu-item-type-taxonomy menu-item-object-category menu-item-772 color229"><a href="https://blogkod.com/video/">Videolar</a></li>
+</ul>
+</li>
+<li id="menu-item-733" class="takvim menu-item menu-item-type-taxonomy menu-item-object-category menu-item-733 color223"><a href="https://blogkod.com/etkinlik-odevler/">Etkinlik ve Ödevler</a></li>
+<li id="menu-item-734" class="tamir menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-734 color12"><a href="https://blogkod.com/kodlama/">Kodlama</a>
+<ul class="sub-menu">
+	<li id="menu-item-739" class="gulenyuz menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-739 color10"><a href="https://blogkod.com/mblock/">mBlock</a>
+	<ul class="sub-menu">
+		<li id="menu-item-3443" class="canta menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3443 color1038"><a href="https://blogkod.com/mblock/uzantilar/">Uzantılar(Extensions)</a></li>
+	</ul>
+</li>
+	<li id="menu-item-738" class="alinti menu-item menu-item-type-taxonomy menu-item-object-category menu-item-738 color224"><a href="https://blogkod.com/arduino/">Arduino</a></li>
+	<li id="menu-item-774" class="rastgele menu-item menu-item-type-taxonomy menu-item-object-category menu-item-774 color228"><a href="https://blogkod.com/tinkercad/">TinkerCAD</a></li>
+	<li id="menu-item-740" class="monitor menu-item menu-item-type-taxonomy menu-item-object-category menu-item-740 color9"><a href="https://blogkod.com/scratch/">Scratch</a></li>
+</ul>
+</li>
+<li id="menu-item-735" class="ates menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-735 color14"><a href="https://blogkod.com/sinavlar/">Sınavlar</a>
+<ul class="sub-menu">
+	<li id="menu-item-1477" class="soru menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1477 color496"><a href="https://blogkod.com/sinavlar/5-sinif-sinavlar/">5. Sınıf Sınavlar</a></li>
+	<li id="menu-item-1478" class="bilgi menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1478 color497"><a href="https://blogkod.com/sinavlar/6-sinif-sinavlar/">6. Sınıf Sınavlar</a></li>
+</ul>
+</li>
+</ul>					</div>
+				</div>
+			</nav>
+			<div style="clear: both"></div>
+		</div>
+	</div>
+</header>
+
+
+
+
+
+<div id="wrapper">
+
+			
+			
+	<div id="main">
+	<div id="content">
+<div id="single">
+
+<div class="safirBox">
+
+	<div class="singleHeading">
+		<h1 class="title">Scratch-Labirent Uygulaması</h1>
+					<div id="breadcrumb">
+				<div xmlns:v="http://rdf.data-vocabulary.org/#"><span typeof="v:Breadcrumb"><a rel="v:url" property="v:title" class="crumbs-home" href="https://blogkod.com">Anasayfa</a></span> <span class="delimiter">&raquo;</span> <span typeof="v:Breadcrumb"><a rel="v:url" property="v:title" href="https://blogkod.com/kodlama/">Kodlama</a></span> <span class="delimiter">&raquo;</span> <span class="current">Scratch-Labirent Uygulaması</span></div>			</div>	
+			</div>
+
+	<div class="metaBox">
+					<div class="meta author"><div class="icon"></div><a href="https://blogkod.com/author/admin/" title="admin tarafından yazılan yazılar" rel="author">admin</a></div>
+							<div class="meta category"><div class="icon"></div>	<div class="safirCategoryMeta">
+							<a class="sfrCatClr cat9" href="https://blogkod.com/scratch/">Scratch</a>
+						</div>
+	</div>
+							<div class="meta date"><div class="icon"></div>23.04.2019</div>
+							<div class="meta comment">
+					<div class="icon"></div>
+					<a href="https://blogkod.com/scratch-labirent-uygulamasi/#comments" rel="nofollow">
+					3</a>
+				</div>
+							<div class="meta hit"><div class="icon"></div>
+					10.821				</div>
+						<div class="share safirSocial">
+			<ul>
+				<li class="facebook">
+					<a rel="external" href="https://www.facebook.com/sharer/sharer.php?u=https://blogkod.com/scratch-labirent-uygulamasi/" title="Konuyu Facebook'ta Paylaş"></a>
+				</li>
+				<li class="twitter">
+					<a rel="external" href="https://www.twitter.com/share?url=https://blogkod.com/scratch-labirent-uygulamasi/&amp;text=Scratch-Labirent Uygulaması" title="Konuyu Twitter'da Paylaş"></a>
+				</li>
+				<li class="google">
+					<a rel="external" href="https://plus.google.com/share?url=https://blogkod.com/scratch-labirent-uygulamasi/" title="Konuyu Google Plus'ta Paylaş"></a>
+				</li>
+							</ul>
+		</div>
+	</div>
+
+			<div class="reading excerpt"><p>Bilindiği üzere labirent oyunlarında bir giriş ya da başlangıç diyeceğimiz bir konum, bir de çıkış ya da varış diyebileceğimiz bir konum vardır.</p>
+</div>
+		
+					<div id="singleBlock" class="type1">
+					<div class="thumb">
+						<img src="https://blogkod.com/wp-content/uploads/2019/04/labirent-uygulamasi-manset-230419-770x433.png" alt="Scratch-Labirent Uygulaması" width="770" height="433" />					</div>
+				
+								<div class="ads type1"><img src="http://blogkod.com/wp-content/uploads/2019/01/728x90.png" alt="Reklam" width="728" height="90" /></div>
+							</div>
+			
+	<div id="singleContent" class="reading">
+		
+<p>Merhabalar,</p>
+
+
+
+<p>Bu uygulamamızda Olaylar taş blokunda yer alan haber salma taşlarını kullanarak 3 seviyeden oluşan basit bir labirent oyunu tasarlayacağız.</p>
+
+
+
+<p><strong>Labirent Uygulaması:</strong></p><div class=ads></div>
+
+
+
+<figure><iframe loading="lazy" src="//scratch.mit.edu/projects/embed/304258366/?autostart=false" width="100%" height="535" frameborder="0" allowfullscreen="allowfullscreen" scrolling="no"></iframe></figure>
+
+
+
+<p>Bilindiği üzere labirent oyunlarında bir giriş ya da başlangıç diyeceğimiz bir konum, bir de çıkış ya da varış diyebileceğimiz bir konum vardır.</p>
+
+
+
+<p><strong>Labirent Uygulamamızın Temel Özellikleri Şunlardan Oluşacaktır:</strong></p>
+
+
+
+<ol><li>Uygulamamız 3 seviyeden oluşacak ve Yeşil Bayrak taşıyla oyun başlayacaktır.</li><li>Uygulamadaki kuklalar klavyeden yön tuşları ile kontrol edilecektir.</li><li>Her seviyede farklı kuklalarla sonuca ulaşılacaktır.</li><li>Her seviye basit, orta ve zor olmak üzere 3 bölümden oluşacaktır.</li><li>Seviyenin tamamlandığı bilgisi &#8220;haber sal&#8221; blok taşıyla gönderilecek ve tüm kuklalar bu habere göre davranış sergileyeceklerdir.</li><li>Uygulamada arka planda sürekli çalacak bir müzik dosyası olacak ve uygulama süresi de bu ses dosyasının uzunluğu kadar olacaktır. Bu süre değişkeni ile tanımlanacak ve 1&#8217;er saniye aralıklarla geriye doğru sayım gerçekleşecektir.</li><li>Uygulamada 3 seviye haricinde, 1 tane labirentlerin tamamlanması sonucu TEBRİKLER dekoru, bir de sürenin bitmesi sonucunda SÜRE BİTTİ dekoru kullanılacaktır.</li><li>Oyunu tamamlama ya da kaybetme durumunda sahneler değişecek ve sahneye uygun bir ses dosyası çalacaktır.</li></ol>
+
+
+
+<p>Labirent uygulamasında kullandığımız labirent sahnelerini sahne tasarımında Çizgisele dönüştür butonu ile Çizgi aracını kullanarak istediğiniz renkte ve çizgi kalınlığında çizimi gerçekleştirebilirsiniz. Çizgisele dönüştür ile vektörel çizim gerçekleştirilir. Bu da çözünürlüğün hiçbir şekilde bozulmayacağı anlamına gelmektedir.</p><div class=ads></div>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter"><img loading="lazy" width="877" height="657" src="https://blogkod.com/wp-content/uploads/2019/04/labirent-tasarimi-230419.png" alt="Labirent Dekoru Tasarımı" class="wp-image-2638" srcset="https://blogkod.com/wp-content/uploads/2019/04/labirent-tasarimi-230419.png 877w, https://blogkod.com/wp-content/uploads/2019/04/labirent-tasarimi-230419-300x225.png 300w, https://blogkod.com/wp-content/uploads/2019/04/labirent-tasarimi-230419-768x575.png 768w" sizes="(max-width: 877px) 100vw, 877px" /><figcaption> Labirent Dekoru Tasarımı </figcaption></figure></div>
+
+
+
+<p>Çizgi aracını klavyeden SHIFT tuşu ile birlikte kullanmak gerek. Böylece düz çizgileri elde etmiş oluruz.</p>
+
+
+
+<p>Bu araçlarla aşağıdaki basit, orta ve zor dekorlarını rahatlıkla tasarlayabiliriz. </p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter"><img loading="lazy" width="480" height="360" src="https://blogkod.com/wp-content/uploads/2019/04/dekor-basit-230419.png" alt="Labirent Uygulaması Basit Dekoru" class="wp-image-2639" srcset="https://blogkod.com/wp-content/uploads/2019/04/dekor-basit-230419.png 480w, https://blogkod.com/wp-content/uploads/2019/04/dekor-basit-230419-300x225.png 300w" sizes="(max-width: 480px) 100vw, 480px" /><figcaption>Labirent Uygulaması Basit Dekoru</figcaption></figure></div>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter"><img loading="lazy" width="480" height="360" src="https://blogkod.com/wp-content/uploads/2019/04/dekor-orta-230419.png" alt="Labirent Uygulaması Orta Dekoru" class="wp-image-2640" srcset="https://blogkod.com/wp-content/uploads/2019/04/dekor-orta-230419.png 480w, https://blogkod.com/wp-content/uploads/2019/04/dekor-orta-230419-300x225.png 300w" sizes="(max-width: 480px) 100vw, 480px" /><figcaption> Labirent Uygulaması Orta Dekoru </figcaption></figure></div>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter"><img loading="lazy" width="480" height="360" src="https://blogkod.com/wp-content/uploads/2019/04/dekor-zor-230419.png" alt="Labirent Uygulaması Zor Dekoru" class="wp-image-2641" srcset="https://blogkod.com/wp-content/uploads/2019/04/dekor-zor-230419.png 480w, https://blogkod.com/wp-content/uploads/2019/04/dekor-zor-230419-300x225.png 300w" sizes="(max-width: 480px) 100vw, 480px" /><figcaption> Labirent Uygulaması Zor Dekoru </figcaption></figure></div>
+
+
+
+<p>Her seviyede aşağıdaki kuklaları kullanacağız. Kukla kütüphanesinden seçtiğimiz ana kuklaların sadece renklerini değiştirdik. Üçüncü seviyede kullandığımız kuklanın çizimini 10&#215;10 kare olarak çizimini yaptık.</p>
+
+
+
+<p>Hedeflerimizi de yine kukla kütüphanesinden seçtik. Üçüncü seviyede hedef kuklası benzer şekilde 10&#215;10 kare olarak çizilmiştir.</p>
+
+
+
+<ul class="wp-block-gallery columns-2 is-cropped"><li class="blocks-gallery-item"><figure><a href="https://blogkod.com/wp-content/uploads/2019/04/dekor-basit-ana-kukla-230419.png"><img loading="lazy" width="836" height="627" src="https://blogkod.com/wp-content/uploads/2019/04/dekor-basit-ana-kukla-230419.png" alt="" data-id="2642" data-link="https://blogkod.com/?attachment_id=2642" class="wp-image-2642" srcset="https://blogkod.com/wp-content/uploads/2019/04/dekor-basit-ana-kukla-230419.png 836w, https://blogkod.com/wp-content/uploads/2019/04/dekor-basit-ana-kukla-230419-300x225.png 300w, https://blogkod.com/wp-content/uploads/2019/04/dekor-basit-ana-kukla-230419-768x576.png 768w" sizes="(max-width: 836px) 100vw, 836px" /></a><figcaption>Basit Dekor Ana Kukla</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://blogkod.com/wp-content/uploads/2019/04/dekor-basit-hedef-kukla-230419.png"><img loading="lazy" width="838" height="627" src="https://blogkod.com/wp-content/uploads/2019/04/dekor-basit-hedef-kukla-230419.png" alt="" data-id="2643" data-link="https://blogkod.com/?attachment_id=2643" class="wp-image-2643" srcset="https://blogkod.com/wp-content/uploads/2019/04/dekor-basit-hedef-kukla-230419.png 838w, https://blogkod.com/wp-content/uploads/2019/04/dekor-basit-hedef-kukla-230419-300x224.png 300w, https://blogkod.com/wp-content/uploads/2019/04/dekor-basit-hedef-kukla-230419-768x575.png 768w" sizes="(max-width: 838px) 100vw, 838px" /></a><figcaption> <br>Basit Dekor Hedef Kukla </figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://blogkod.com/wp-content/uploads/2019/04/dekor-orta-ana-kukla-230419.png"><img loading="lazy" width="839" height="627" src="https://blogkod.com/wp-content/uploads/2019/04/dekor-orta-ana-kukla-230419.png" alt="" data-id="2644" data-link="https://blogkod.com/?attachment_id=2644" class="wp-image-2644" srcset="https://blogkod.com/wp-content/uploads/2019/04/dekor-orta-ana-kukla-230419.png 839w, https://blogkod.com/wp-content/uploads/2019/04/dekor-orta-ana-kukla-230419-300x224.png 300w, https://blogkod.com/wp-content/uploads/2019/04/dekor-orta-ana-kukla-230419-768x574.png 768w" sizes="(max-width: 839px) 100vw, 839px" /></a><figcaption> <br>Orta Dekor Ana Kukla </figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://blogkod.com/wp-content/uploads/2019/04/dekor-orta-hedef-kukla-230419.png"><img loading="lazy" width="840" height="629" src="https://blogkod.com/wp-content/uploads/2019/04/dekor-orta-hedef-kukla-230419.png" alt="" data-id="2645" data-link="https://blogkod.com/?attachment_id=2645" class="wp-image-2645" srcset="https://blogkod.com/wp-content/uploads/2019/04/dekor-orta-hedef-kukla-230419.png 840w, https://blogkod.com/wp-content/uploads/2019/04/dekor-orta-hedef-kukla-230419-300x225.png 300w, https://blogkod.com/wp-content/uploads/2019/04/dekor-orta-hedef-kukla-230419-768x575.png 768w" sizes="(max-width: 840px) 100vw, 840px" /></a><figcaption> <br>Orta Dekor Hedef Kukla </figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://blogkod.com/wp-content/uploads/2019/04/dekor-zor-ana-kukla-230419.png"><img loading="lazy" width="832" height="630" src="https://blogkod.com/wp-content/uploads/2019/04/dekor-zor-ana-kukla-230419.png" alt="" data-id="2646" data-link="https://blogkod.com/?attachment_id=2646" class="wp-image-2646" srcset="https://blogkod.com/wp-content/uploads/2019/04/dekor-zor-ana-kukla-230419.png 832w, https://blogkod.com/wp-content/uploads/2019/04/dekor-zor-ana-kukla-230419-300x227.png 300w, https://blogkod.com/wp-content/uploads/2019/04/dekor-zor-ana-kukla-230419-768x582.png 768w" sizes="(max-width: 832px) 100vw, 832px" /></a><figcaption> <br>Zor Dekor Ana Kukla </figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="https://blogkod.com/wp-content/uploads/2019/04/dekor-zor-hedef-kukla-230419.png"><img loading="lazy" width="837" height="630" src="https://blogkod.com/wp-content/uploads/2019/04/dekor-zor-hedef-kukla-230419.png" alt="" data-id="2647" data-link="https://blogkod.com/?attachment_id=2647" class="wp-image-2647" srcset="https://blogkod.com/wp-content/uploads/2019/04/dekor-zor-hedef-kukla-230419.png 837w, https://blogkod.com/wp-content/uploads/2019/04/dekor-zor-hedef-kukla-230419-300x226.png 300w, https://blogkod.com/wp-content/uploads/2019/04/dekor-zor-hedef-kukla-230419-768x578.png 768w" sizes="(max-width: 837px) 100vw, 837px" /></a><figcaption> <br>Zor Dekor Hedef Kukla </figcaption></figure></li></ul>
+
+
+
+<p>Uygulamadaki tüm ana kuklalar labirent duvarına çarpmaları halinde duvarın piksel kalınlığı kadar geri tepecektir. Kod bloklarında buna dikkat edilmiştir. </p>
+
+
+
+<p>Basit seviyede hedef kukla sınırları belli olan bir alanda hareket edecektir. Orta seviyede hedef kukla kılık değiştirecektir. Zor seviyede ise ana kukla kalem taşlarından iz bırakarak hareket edecektir.</p>
+
+
+
+<p>Sahne arkasında çalacak olan ses dosyasının uzunluğu 233 saniye kadar sürdüğünden uygulamanın tamamlanması için bu süre süre değişkeni olarak belirlenmiştir.<strong>L</strong></p>
+
+
+
+<p style="text-align:center" class="has-text-color has-large-font-size has-luminous-vivid-amber-color"><strong><a href="https://scratch.mit.edu/projects/304258366/" target="_blank" rel="noreferrer noopener" aria-label="Scratch-Labirent Uygulaması (scratch.mit.edu) (yeni sekmede açılır)">Scratch-Labirent Uygulaması (scratch.mit.edu)</a></strong></p>
+
+
+
+<p style="text-align:center" class="has-text-color has-large-font-size has-luminous-vivid-orange-color"><strong><a rel="noreferrer noopener" aria-label="Scratch-Labirent Uygulama dosyasını bilgisayarınıza indirmek için tıklayınız… (yeni sekmede açılır)" href="https://blogkod.com/wp-content/uploads/2019/04/BlogKod.com-Labirent-Uygulaması.rar" target="_blank">Scratch-Labirent Uygulama dosyasını bilgisayarınıza indirmek için tıklayınız…</a></strong></p>
+
+
+
+<p>Bir sonraki uygulamada görüşmek üzere&#8230;</p>
+	</div>
+
+	<div id="page-links">	
+			</div>
+
+				<div class="ads singleAd3"><img src="http://blogkod.com/wp-content/uploads/2019/01/728x90.png" alt="Reklam" width="728" height="90" /></div>
+			
+			<div class="socialbuttons">
+	<iframe src="//www.facebook.com/plugins/like.php?href=https://blogkod.com/scratch-labirent-uygulamasi/&amp;send=false&amp;share=true&amp;layout=button_count&amp;width=180&amp;show_faces=false&amp;font=arial&amp;colorscheme=light&amp;action=like&amp;height=21&amp;" style="border:none; overflow:hidden; width:180px; height:20px;"></iframe>
+
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	<a style="float:left;" href="https://twitter.com/share" class="twitter-share-button" data-url="https://blogkod.com/scratch-labirent-uygulamasi/" data-lang="tr">Tweetle</a>
+	
+
+	<div class="g-plusone" data-size="medium"></div>
+	<script type="text/javascript">
+	  window.___gcfg = {lang: 'tr'};
+
+	  (function() {
+	    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	    po.src = 'https://apis.google.com/js/platform.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	</script>
+</div>
+	
+		<div class="tags">
+		<span class="title">ETİKETLER:</span> <a href="https://blogkod.com/tag/bilisim/" rel="tag">Bilişim</a>, <a href="https://blogkod.com/tag/blog-kod/" rel="tag">blog kod</a>, <a href="https://blogkod.com/tag/blogkod/" rel="tag">blogkod</a>, <a href="https://blogkod.com/tag/blok-kod/" rel="tag">blok kod</a>, <a href="https://blogkod.com/tag/blokkod/" rel="tag">blokkod</a>, <a href="https://blogkod.com/tag/bty/" rel="tag">BTY</a>, <a href="https://blogkod.com/tag/kodlama/" rel="tag">kodlama</a>, <a href="https://blogkod.com/tag/labirent-oyunu/" rel="tag">labirent oyunu</a>, <a href="https://blogkod.com/tag/scratch-dekor-tasarimi/" rel="tag">scratch dekor tasarımı</a>, <a href="https://blogkod.com/tag/scratch-haber-sal-taslari/" rel="tag">scratch haber sal taşları</a>, <a href="https://blogkod.com/tag/scratch-labirent-uygulamasi/" rel="tag">Scratch-Labirent Uygulaması</a>, <a href="https://blogkod.com/tag/teknoloji/" rel="tag">teknoloji</a>, <a href="https://blogkod.com/tag/yazilim/" rel="tag">yazılım</a>	</div>
+	
+</div>
+
+		<div class="safirBox">
+			<div id="related">
+				<div class="mainHeading">
+					<div class="icon rastgele"></div>
+					<div class="title">BENZER KONULAR</div>
+				</div>
+				<div class="slidingWidget homeWidget">
+					<div class="items">
+						<div class="owl-carousel">
+							<div class="post-container">
+	<div class="post">
+		<div class="safirthumb">
+			<a href="https://blogkod.com/mblock-ile-arduino-rgb-led-uygulamasi/">
+				<img src="https://blogkod.com/wp-content/uploads/2019/04/RGB-LED-Module-040419-240x135.jpg" alt="mBlock ile Arduino RGB LED Uygulaması" width="240" height="135" />				<div class="hover"><span></span></div>
+			</a>
+		</div>
+		<div class="detail">
+			<div class="title">
+				<a href="https://blogkod.com/mblock-ile-arduino-rgb-led-uygulamasi/">mBlock ile Arduino RGB LED Uygulaması</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="post-container">
+	<div class="post">
+		<div class="safirthumb">
+			<a href="https://blogkod.com/scratch-nedir/">
+				<img src="https://blogkod.com/wp-content/uploads/2019/03/scratch-nedir-130319-240x135.png" alt="Scratch Nedir?" width="240" height="135" />				<div class="hover"><span></span></div>
+			</a>
+		</div>
+		<div class="detail">
+			<div class="title">
+				<a href="https://blogkod.com/scratch-nedir/">Scratch Nedir?</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="post-container">
+	<div class="post">
+		<div class="safirthumb">
+			<a href="https://blogkod.com/mblock-ile-arduino-buzzer-melodika-uygulamasi/">
+				<img src="https://blogkod.com/wp-content/uploads/2019/04/mblock-buzzer-melodika-manset-120419-240x135.png" alt="mBlock ile Arduino Buzzer Melodika Uygulaması" width="240" height="135" />				<div class="hover"><span></span></div>
+			</a>
+		</div>
+		<div class="detail">
+			<div class="title">
+				<a href="https://blogkod.com/mblock-ile-arduino-buzzer-melodika-uygulamasi/">mBlock ile Arduino Buzzer Melodika Uygulaması</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="post-container">
+	<div class="post">
+		<div class="safirthumb">
+			<a href="https://blogkod.com/tinkercad-ile-arduino-uygulamalari/">
+				<img src="https://blogkod.com/wp-content/uploads/2018/12/tinkercad-ile-arduino-240x135.png" alt="TinkerCAD ile ARDUINO Uygulamaları" width="240" height="135" />				<div class="hover"><span></span></div>
+			</a>
+		</div>
+		<div class="detail">
+			<div class="title">
+				<a href="https://blogkod.com/tinkercad-ile-arduino-uygulamalari/">TinkerCAD ile ARDUINO Uygulamaları</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="post-container">
+	<div class="post">
+		<div class="safirthumb">
+			<a href="https://blogkod.com/scratch-hesap-makinesi-uygulamasi/">
+				<img src="https://blogkod.com/wp-content/uploads/2019/04/hesap-makinesi-manset-240419-240x135.png" alt="Scratch-Hesap Makinesi Uygulaması" width="240" height="135" />				<div class="hover"><span></span></div>
+			</a>
+		</div>
+		<div class="detail">
+			<div class="title">
+				<a href="https://blogkod.com/scratch-hesap-makinesi-uygulamasi/">Scratch-Hesap Makinesi Uygulaması</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="post-container">
+	<div class="post">
+		<div class="safirthumb">
+			<a href="https://blogkod.com/mblock-arduino-potansiyometre-uygulamasi/">
+				<img src="https://blogkod.com/wp-content/uploads/2019/03/BlogKod-mBlock-Potansiyometre-Uygulaması-devresi-240x135.jpg" alt="mBlock ile Arduino Potansiyometre Uygulaması" width="240" height="135" />				<div class="hover"><span></span></div>
+			</a>
+		</div>
+		<div class="detail">
+			<div class="title">
+				<a href="https://blogkod.com/mblock-arduino-potansiyometre-uygulamasi/">mBlock ile Arduino Potansiyometre Uygulaması</a>
+			</div>
+		</div>
+	</div>
+</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		
+<div id="comments" class="sfrIconForm">
+
+	
+	<div class="safirBox">
+		<div class="mainHeading">
+			<div class="icon kalem"></div>
+			<div class="title">BİR YORUM YAZIN</div>
+		</div>
+			<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/scratch-labirent-uygulamasi/#respond" style="display:none;">[ Yoruma cevap yazmaktan vazgeç ]</a></small></h3><form action="https://blogkod.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><div class="container"><div class="itemContainer"><div class="item message"><textarea placeholder="Yorumunuz" class="message" name="comment" id="comment" cols="60" rows="10" tabindex="4"></textarea></div></div></div><div class="container half"><div class="itemContainer"><div class="item name"><div class="icon"><span></span></div><input placeholder="İsminiz" type="text" id="author" name="author" size="80" tabindex="2" value="" /></div></div>
+<div class="itemContainer"><div class="item mail"><div class="icon"><span></span></div><input placeholder="Mail adresiniz" type="text" id="email" name="email" size="80" tabindex="3" value="" /></div></div></div>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Bir dahaki sefere yorum yaptığımda kullanılmak üzere adımı, e-posta adresimi ve web site adresimi bu tarayıcıya kaydet.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Gönder" /> <input type='hidden' name='comment_post_ID' value='2635' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form>	</div><!-- #respond -->
+		</div>
+
+	<div class="safirBox">
+		<div class="mainHeading">
+			<div class="icon yorum"></div>
+			<div class="title">ZİYARETÇİ YORUMLARI - 3 YORUM</div>
+		</div>
+
+		<div class="sfrCommentsList">
+							<ol class="commentlist">
+							<li class="comment even thread-even depth-1" id="comment-256">
+				<div id="div-comment-256" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/?s=75&#038;d=identicon&#038;r=g' srcset='https://secure.gravatar.com/avatar/?s=150&#038;d=identicon&#038;r=g 2x' class='avatar avatar-75 photo avatar-default' height='75' width='75' loading='lazy'/>			<cite class="fn">Anonim</cite> <span class="says">dedi ki:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://blogkod.com/scratch-labirent-uygulamasi/#comment-256">Şubat 25, 2020, 13:43</a>		</div>
+
+		<p>bir uygulama</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://blogkod.com/scratch-labirent-uygulamasi/?replytocom=256#respond' data-commentid="256" data-postid="2635" data-belowelement="div-comment-256" data-respondelement="respond" data-replyto="Cevap " aria-label='Cevap '>Cevap Ver</a></div>
+				</div>
+				</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 parent" id="comment-90">
+				<div id="div-comment-90" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/37272afda11e07396b532c0978e62427?s=75&#038;d=identicon&#038;r=g' srcset='https://secure.gravatar.com/avatar/37272afda11e07396b532c0978e62427?s=150&#038;d=identicon&#038;r=g 2x' class='avatar avatar-75 photo' height='75' width='75' loading='lazy'/>			<cite class="fn">Komutan Logar</cite> <span class="says">dedi ki:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://blogkod.com/scratch-labirent-uygulamasi/#comment-90">Mayıs 2, 2019, 22:49</a>		</div>
+
+		<p>En çok dikkatimi çeken &#8220;Ghost Masters&#8221; film müziği oldu 🙂</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://blogkod.com/scratch-labirent-uygulamasi/?replytocom=90#respond' data-commentid="90" data-postid="2635" data-belowelement="div-comment-90" data-respondelement="respond" data-replyto="Cevap Komutan Logar" aria-label='Cevap Komutan Logar'>Cevap Ver</a></div>
+				</div>
+				<ol class="children">
+		<li class="comment byuser comment-author-admin bypostauthor even depth-2" id="comment-91">
+				<div id="div-comment-91" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/0758dfa41ede2dec71d5cd5c5c4200c8?s=75&#038;d=identicon&#038;r=g' srcset='https://secure.gravatar.com/avatar/0758dfa41ede2dec71d5cd5c5c4200c8?s=150&#038;d=identicon&#038;r=g 2x' class='avatar avatar-75 photo' height='75' width='75' loading='lazy'/>			<cite class="fn"><a href='https://blogkod.com/' rel='external nofollow ugc' class='url'>admin</a></cite> <span class="says">dedi ki:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://blogkod.com/scratch-labirent-uygulamasi/#comment-91">Mayıs 2, 2019, 22:52</a>		</div>
+
+		<p>Temaya uygun olsun istedik. 🙂</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://blogkod.com/scratch-labirent-uygulamasi/?replytocom=91#respond' data-commentid="91" data-postid="2635" data-belowelement="div-comment-91" data-respondelement="respond" data-replyto="Cevap admin" aria-label='Cevap admin'>Cevap Ver</a></div>
+				</div>
+				</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+				</ol>
+								</div>
+	</div>
+</div>
+
+
+</div><!--single-->
+
+</div><!--content-->
+
+<aside>
+<div id="panels">
+	<div class="advancedPostsWidget1 safirBox default sidebarWidget">
+	<div class="mainHeading">
+	<div class="icon ates"></div>	<span class="title">Blogdan Seçmeler</span>
+</div>
+			<div class="widgetContent">
+			<div class="items">
+									<div class="post-container">
+						<div class="post">
+							<div class="safirthumb">
+								<a href="https://blogkod.com/scratch-basit-melodika-uygulamasi/">
+									<img src="https://blogkod.com/wp-content/uploads/2019/04/melodika-manset-240419-260x146.png" alt="Scratch-Basit Melodika Uygulaması" width="260" height="146" />								</a>
+							</div>
+							<div class="detail">
+									<div class="safirCategoryMeta">
+							<a class="sfrCatClr cat9" href="https://blogkod.com/scratch/">Scratch</a>
+						</div>
+									<div class="title">
+									<a href="https://blogkod.com/scratch-basit-melodika-uygulamasi/">Scratch-Basit Melodika Uygulaması</a>
+								</div>
+																	<div class="summary">
+										Veri Taşlar grubundan Bir Liste Oluştur'u kullanarak bir liste oluşturmalıyız. Listeler programcılıkta dizileri ifade eder...									</div>
+																			<div class="safirMetas">
+									<div class="meta date">24.04.2019</div>
+									</div>
+										</div>
+						</div>
+					</div>
+										<div class="post-container">
+						<div class="post">
+							<div class="safirthumb">
+								<a href="https://blogkod.com/arduino-ile-analog-giris-islemleri/">
+									<img src="https://blogkod.com/wp-content/uploads/2019/03/IMG_20190304_135943-260x146.jpg" alt="Arduino ile Analog Giriş İşlemleri" width="260" height="146" />								</a>
+							</div>
+							<div class="detail">
+									<div class="safirCategoryMeta">
+							<a class="sfrCatClr cat224" href="https://blogkod.com/arduino/">Arduino</a>
+						</div>
+									<div class="title">
+									<a href="https://blogkod.com/arduino-ile-analog-giris-islemleri/">Arduino ile Analog Giriş İşlemleri</a>
+								</div>
+																	<div class="summary">
+										Bu uygulamamızda potansiyometre ile analog değer okuma işlemlerinin mantığını kavramaya çalışacağız.									</div>
+																			<div class="safirMetas">
+									<div class="meta date">04.03.2019</div>
+									</div>
+										</div>
+						</div>
+					</div>
+										<div class="post-container">
+						<div class="post">
+							<div class="safirthumb">
+								<a href="https://blogkod.com/5-siniflar-2-donem-2-hafta-en-iyi-cozumu-buldum/">
+									<img src="https://blogkod.com/wp-content/uploads/2020/02/5-2d-2h-260x146.png" alt="5. Sınıflar 2. Dönem 2. Hafta En İyi Çözümü Buldum" width="260" height="146" />								</a>
+							</div>
+							<div class="detail">
+									<div class="safirCategoryMeta">
+							<a class="sfrCatClr cat222" href="https://blogkod.com/ders-notlari/">Ders Notları</a>
+						</div>
+									<div class="title">
+									<a href="https://blogkod.com/5-siniflar-2-donem-2-hafta-en-iyi-cozumu-buldum/">5. Sınıflar 2. Dönem 2. Hafta En İyi Çözümü Buldum</a>
+								</div>
+																	<div class="summary">
+										Merhabalar, 5. Sınıflar Bilişim Teknolojileri ve Yazılım Dersinin 2. Dönem 2. haftasında aşağıdaki kazanımları hedef...									</div>
+																			<div class="safirMetas">
+									<div class="meta date">06.02.2020</div>
+									</div>
+										</div>
+						</div>
+					</div>
+										<div class="post-container">
+						<div class="post">
+							<div class="safirthumb">
+								<a href="https://blogkod.com/mblock-ile-arduino-blink-uygulamasi/">
+									<img src="https://blogkod.com/wp-content/uploads/2019/02/mBlock-ile-Arduino-BLINK-Uygulamasi-260x146.png" alt="mBlock ile Arduino BLINK Uygulaması" width="260" height="146" />								</a>
+							</div>
+							<div class="detail">
+									<div class="safirCategoryMeta">
+							<a class="sfrCatClr cat10" href="https://blogkod.com/mblock/">mBlock</a>
+						</div>
+									<div class="title">
+									<a href="https://blogkod.com/mblock-ile-arduino-blink-uygulamasi/">mBlock ile Arduino BLINK Uygulaması</a>
+								</div>
+																	<div class="summary">
+										mBlock ile ilk uygulamamızı Blink (Göz Kırpan LED) ile gerçekleştireceğiz. Bunun için Arduino üzerinde yerleşik...									</div>
+																			<div class="safirMetas">
+									<div class="meta date">17.02.2019</div>
+									</div>
+										</div>
+						</div>
+					</div>
+										<div class="post-container">
+						<div class="post">
+							<div class="safirthumb">
+								<a href="https://blogkod.com/mblock-ile-havuc-piyano-uygulamalari/">
+									<img src="https://blogkod.com/wp-content/uploads/2019/03/BlogKod-mBlock-ile-Havuç-Piyano-Uygulaması-02-devresi-260x146.jpg" alt="mBlock ile Havuç Piyano Uygulamaları" width="260" height="146" />								</a>
+							</div>
+							<div class="detail">
+									<div class="safirCategoryMeta">
+							<a class="sfrCatClr cat10" href="https://blogkod.com/mblock/">mBlock</a>
+						</div>
+									<div class="title">
+									<a href="https://blogkod.com/mblock-ile-havuc-piyano-uygulamalari/">mBlock ile Havuç Piyano Uygulamaları</a>
+								</div>
+																	<div class="summary">
+										Bu uygulamamızda interaktif, yani etkileşimli olarak hem gerçek hem de dijital havuç resimlerinden piyano uygulaması...									</div>
+																			<div class="safirMetas">
+									<div class="meta date">19.03.2019</div>
+									</div>
+										</div>
+						</div>
+					</div>
+										<div class="post-container">
+						<div class="post">
+							<div class="safirthumb">
+								<a href="https://blogkod.com/arduino-ile-buton-uygulamasi/">
+									<img src="https://blogkod.com/wp-content/uploads/2019/02/arduino-buton-uygulama-260x146.png" alt="Arduino ile Buton Uygulaması" width="260" height="146" />								</a>
+							</div>
+							<div class="detail">
+									<div class="safirCategoryMeta">
+							<a class="sfrCatClr cat224" href="https://blogkod.com/arduino/">Arduino</a>
+						</div>
+									<div class="title">
+									<a href="https://blogkod.com/arduino-ile-buton-uygulamasi/">Arduino ile Buton Uygulaması</a>
+								</div>
+																	<div class="summary">
+										Arduino uygulamalarında butonlar sıklıkla girdi (INPUT) işlemleri için kullanılan devre elemanlarındandır.  Butona basarak voltaj...									</div>
+																			<div class="safirMetas">
+									<div class="meta date">14.02.2019</div>
+									</div>
+										</div>
+						</div>
+					</div>
+										<div class="post-container">
+						<div class="post">
+							<div class="safirthumb">
+								<a href="https://blogkod.com/5-siniflar-1-donem-17-hafta-sinif-dergimiz-sahnede/">
+									<img src="https://blogkod.com/wp-content/uploads/2019/12/5-1d-17h-260x146.png" alt="5. Sınıflar 1. Dönem 17. Hafta Sınıf Dergimiz Sahnede" width="260" height="146" />								</a>
+							</div>
+							<div class="detail">
+									<div class="safirCategoryMeta">
+							<a class="sfrCatClr cat222" href="https://blogkod.com/ders-notlari/">Ders Notları</a>
+						</div>
+									<div class="title">
+									<a href="https://blogkod.com/5-siniflar-1-donem-17-hafta-sinif-dergimiz-sahnede/">5. Sınıflar 1. Dönem 17. Hafta Sınıf Dergimiz Sahnede</a>
+								</div>
+																	<div class="summary">
+										Merhabalar, 5. Sınıflar Bilişim Teknolojileri ve Yazılım Dersinin 1. Dönem 17. haftasında aşağıdaki kazanımları hedef...									</div>
+																			<div class="safirMetas">
+									<div class="meta date">26.12.2019</div>
+									</div>
+										</div>
+						</div>
+					</div>
+										<div class="post-container">
+						<div class="post">
+							<div class="safirthumb">
+								<a href="https://blogkod.com/6-siniflar-2-donem-13-hafta-dusunen-bilgisayar/">
+									<img src="https://blogkod.com/wp-content/uploads/2021/05/6-2d-13h-260x146.png" alt="6. Sınıflar 2. Dönem 13. Hafta Düşünen Bilgisayar" width="260" height="146" />								</a>
+							</div>
+							<div class="detail">
+									<div class="safirCategoryMeta">
+							<a class="sfrCatClr cat222" href="https://blogkod.com/ders-notlari/">Ders Notları</a>
+						</div>
+									<div class="title">
+									<a href="https://blogkod.com/6-siniflar-2-donem-13-hafta-dusunen-bilgisayar/">6. Sınıflar 2. Dönem 13. Hafta Düşünen Bilgisayar</a>
+								</div>
+																	<div class="summary">
+										Merhabalar, 6. Sınıflar Bilişim Teknolojileri ve Yazılım Dersinin 2. Dönem 13. haftasında aşağıdaki kazanımları hedef...									</div>
+																			<div class="safirMetas">
+									<div class="meta date">27.05.2021</div>
+									</div>
+										</div>
+						</div>
+					</div>
+										<div class="post-container">
+						<div class="post">
+							<div class="safirthumb">
+								<a href="https://blogkod.com/6-siniflar-1-donem-12-hafta-ara-tara-sor-sorgula/">
+									<img src="https://blogkod.com/wp-content/uploads/2019/11/6-1d-12h-260x146.png" alt="6. Sınıflar 1. Dönem 12. Hafta Ara-Tara, Sor-Sorgula" width="260" height="146" />								</a>
+							</div>
+							<div class="detail">
+									<div class="safirCategoryMeta">
+							<a class="sfrCatClr cat222" href="https://blogkod.com/ders-notlari/">Ders Notları</a>
+						</div>
+									<div class="title">
+									<a href="https://blogkod.com/6-siniflar-1-donem-12-hafta-ara-tara-sor-sorgula/">6. Sınıflar 1. Dönem 12. Hafta Ara-Tara, Sor-Sorgula</a>
+								</div>
+																	<div class="summary">
+										Merhabalar, 6. Sınıflar Bilişim Teknolojileri ve Yazılım Dersinin 1. Dönem 12. haftasında aşağıdaki kazanımları hedef...									</div>
+																			<div class="safirMetas">
+									<div class="meta date">28.11.2019</div>
+									</div>
+										</div>
+						</div>
+					</div>
+										<div class="post-container">
+						<div class="post">
+							<div class="safirthumb">
+								<a href="https://blogkod.com/mblock-ile-arduino-butonlu-bariyer-uygulamasi/">
+									<img src="https://blogkod.com/wp-content/uploads/2019/05/bariyer-uygulaması-manset-090519-260x146.jpg" alt="mBlock ile Arduino Butonlu Bariyer Uygulaması" width="260" height="146" />								</a>
+							</div>
+							<div class="detail">
+									<div class="safirCategoryMeta">
+							<a class="sfrCatClr cat10" href="https://blogkod.com/mblock/">mBlock</a>
+						</div>
+									<div class="title">
+									<a href="https://blogkod.com/mblock-ile-arduino-butonlu-bariyer-uygulamasi/">mBlock ile Arduino Butonlu Bariyer Uygulaması</a>
+								</div>
+																	<div class="summary">
+										Servo motorlar, data kablosu ile kendisine gönderilen sinyale bağlı olarak motor kolunu belirli açılarda döndüren,...									</div>
+																			<div class="safirMetas">
+									<div class="meta date">10.05.2019</div>
+									</div>
+										</div>
+						</div>
+					</div>
+								</div>
+		</div>
+		</div></div>
+</aside>
+
+</div>
+<!--main--><div style="clear:both"></div>
+</div><!--main-->
+
+<footer>
+	<div class="innerContainer top">
+		<div class="footerCols">
+				<div class="footerContainer">
+			<div class="about">
+				<div class="logo">
+					<a href="https://blogkod.com"><img src="http://blogkod.com/wp-content/uploads/2018/12/blogkodlogo.png" alt="BlogKod" title="BlogKod - Anasayfa" width="300" height="80"  /></a>
+				</div>
+				<div class="copyright"><a href="https://blogkod.com/"><font color="f89d41">BlogKod,</font></a> Bilişim Teknolojileri ve Yazılım Dersi'ne ait notlar, uygulamalar içerir. <p>
+İçeriklerimizde hak sahibi olduğunuzu düşünüyorsanız, <a href="https://blogkod.com/iletisim/"><font color="f89d41">iletişim</font></a> bölümünden mail
+göndererek içeriğin kaldırılmasını talep edebilirsiniz.</div>
+				<div class="footerSocial">
+					<ul class="safirSocial">
+	<li class="facebook">
+			<a rel="external" href="https://www.facebook.com/blogkodcom" title="Facebook"></a></li><li class="twitter">
+			<a rel="external" href="https://twitter.com/blogkodcom" title="Twitter"></a></li><li class="youtube">
+			<a rel="external" href="https://www.youtube.com/channel/UC0jSeXvADGX5atXPWMrB-XQ" title="Youtube"></a></li><li class="pinterest">
+			<a rel="external" href="https://tr.pinterest.com/blogkodcom/" title="Pinterest"></a></li><li class="instagram">
+			<a rel="external" href="https://www.instagram.com/blogkodcom" title="Instagram"></a></li><li class="linkedin">
+			<a rel="external" href="https://www.linkedin.com/in/blogkodcom/" title="Linkedin"></a></li></ul>				</div>
+			</div>
+		</div>
+						<div class="footerContainer">
+			<div class="footermenu footermenu1">
+									<div class="footerHeading">
+						<div class="title">Kategoriler</div>
+					</div>
+								<nav>
+					<ul id="menu-kategoriler" class="menu"><li id="menu-item-2042" class="alinti menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2042 color224"><a href="https://blogkod.com/arduino/">Arduino</a></li>
+<li id="menu-item-2408" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2408 color10"><a href="https://blogkod.com/mblock/">mBlock</a></li>
+<li id="menu-item-2410" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2410 color228"><a href="https://blogkod.com/tinkercad/">TinkerCAD</a></li>
+<li id="menu-item-2409" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2409 color9"><a href="https://blogkod.com/scratch/">Scratch</a></li>
+<li id="menu-item-808" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-808 color223"><a href="https://blogkod.com/etkinlik-odevler/">Etkinlik ve Ödevler</a></li>
+<li id="menu-item-2411" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2411 color241"><a href="https://blogkod.com/calisma-yapraklari/">Çalışma Yaprakları</a></li>
+</ul>				</nav>
+			</div>
+		</div>
+						<div class="footerContainer">
+			<div class="footerposts">
+									<div class="footerHeading">
+						<div class="title">Son Eklenenler</div>
+					</div>
+										<div class="posts">
+							<div class="post">
+					<a href="https://blogkod.com/6-siniflar-2-donem-18-hafta-tekrar-edelim/">
+						<div class="safirthumb">
+							<img src="https://blogkod.com/wp-content/uploads/2021/06/6-2d-18h-50x50.png" alt="6. Sınıflar 2. Dönem 18. Hafta Tekrar Edelim" width="50" height="50" />						</div>
+						<div class="detail">
+							<div class="title">
+								6. Sınıflar 2. Dönem 18. Hafta Tekrar Edelim							</div>
+						</div>
+					</a>
+				</div>
+								<div class="post">
+					<a href="https://blogkod.com/5-siniflar-2-donem-18-hafta-tekrar-edelim/">
+						<div class="safirthumb">
+							<img src="https://blogkod.com/wp-content/uploads/2021/06/5-2d-18h-50x50.png" alt="5. Sınıflar 2. Dönem 18. Hafta Tekrar Edelim" width="50" height="50" />						</div>
+						<div class="detail">
+							<div class="title">
+								5. Sınıflar 2. Dönem 18. Hafta Tekrar Edelim							</div>
+						</div>
+					</a>
+				</div>
+						</div>
+					</div>
+		</div>
+						<div class="footerContainer">
+			<div class="footermenu footermenu2">
+									<div class="footerHeading">
+						<div class="title">BlogKod</div>
+					</div>
+								<nav>
+					<ul id="menu-footer-menu-2" class="menu"><li id="menu-item-520" class="ev menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-520"><a href="https://blogkod.com/">Anasayfa</a></li>
+<li id="menu-item-523" class="at menu-item menu-item-type-custom menu-item-object-custom menu-item-523"><a href="https://blogkod.com/iletisim/">İletişim</a></li>
+<li id="menu-item-869" class="dunya menu-item menu-item-type-custom menu-item-object-custom menu-item-869"><a href="https://blogkod.com/gizlilik-politikamiz/">Gizlilik Politikamız</a></li>
+</ul>				</nav>
+			</div>
+		</div>
+				</div>
+	</div>
+
+</footer>
+		<div id="footerBottom">
+		<div class="bottomText">
+			Bilişim Teknolojileri ve Yazılım Ders Notları, Uygulamalar, Kodlama ve Arduino<p> <a href="https://blogkod.com/"><font color="f89d41">©2018-2021 BlogKod</font></a>		
+		</div>
+	</div>
+	
+<div class="safirTop"></div>
+
+
+</div><!--safirpage-->
+
+<script  src='https://blogkod.com/wp-includes/js/comment-reply.min.js?ver=5.8.1' id='comment-reply-js'></script>
+<script type='text/javascript' id='wp-postviews-cache-js-extra'>
+/* <![CDATA[ */
+var viewsCacheL10n = {"admin_ajax_url":"https:\/\/blogkod.com\/wp-admin\/admin-ajax.php","post_id":"2635"};
+/* ]]> */
+</script>
+<script  src='https://blogkod.com/wp-content/plugins/wp-postviews/postviews-cache.js?ver=1.68' id='wp-postviews-cache-js'></script>
+<script  src='https://blogkod.com/wp-content/themes/safirblog/lib/owl-carousel/owl.carousel.min.js' id='sfrowl-js'></script>
+<script  src='https://blogkod.com/wp-content/themes/safirblog/scripts/scripts.js' id='sfrscripts-js'></script>
+<script type='text/javascript' id='cookie-notice-front-js-extra'>
+/* <![CDATA[ */
+var cnArgs = {"ajaxUrl":"https:\/\/blogkod.com\/wp-admin\/admin-ajax.php","nonce":"e897ab99e6","hideEffect":"fade","position":"bottom","onScroll":"0","onScrollOffset":"100","onClick":"0","cookieName":"cookie_notice_accepted","cookieTime":"3600","cookieTimeRejected":"2592000","cookiePath":"\/","cookieDomain":"","redirection":"0","cache":"1","refuse":"0","revokeCookies":"0","revokeCookiesOpt":"automatic","secure":"1"};
+/* ]]> */
+</script>
+<script async  src='https://blogkod.com/wp-content/plugins/cookie-notice/includes/../js/front.min.js?ver=2.1.5' id='cookie-notice-front-js'></script>
+<script  src='https://blogkod.com/wp-includes/js/wp-embed.min.js?ver=5.8.1' id='wp-embed-js'></script>
+
+		<!-- Cookie Notice plugin v2.1.5 by Hu-manity.co https://hu-manity.co/ -->
+		<div id="cookie-notice" role="dialog" class="cookie-notice-hidden cookie-revoke-hidden cn-position-bottom" aria-label="Cookie Notice" style="background-color: rgba(0,0,0,1);"><div class="cookie-notice-container" style="color: #fff;"><span id="cn-notice-text" class="cn-text-container">Web sitemizde size en iyi deneyimi sunabilmemiz için çerezleri kullanıyoruz. Bu siteyi kullanmaya devam ederseniz, bunu kabul ettiğinizi varsayarız.</span><span id="cn-notice-buttons" class="cn-buttons-container"><a href="#" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button bootstrap button" aria-label="Tamam">Tamam</a><a href="https://blogkod.com/gizlilik-politikamiz/" target="_blank" id="cn-more-info" class="cn-more-info cn-button bootstrap button" aria-label="Gizlilik politikası">Gizlilik politikası</a></span><a href="javascript:void(0);" id="cn-close-notice" data-cookie-set="accept" class="cn-close-icon" aria-label="Tamam"></a></div>
+			
+		</div>
+		<!-- / Cookie Notice plugin -->
+
+</body>
+</html>
+<!-- Dynamic page generated in 0.960 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2021-11-02 14:36:28 -->
+
+<!-- super cache -->
