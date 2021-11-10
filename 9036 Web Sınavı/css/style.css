@@ -1,0 +1,166 @@
+.header{
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+h1{
+    display: inline;
+    margin-left: 15%;
+}
+.foto{
+    overflow: hidden;
+    height: 300px;
+}
+.foto img{
+    width: 100%;
+    margin-top: 50px;
+}
+.foto p{
+    position: absolute;
+    left: 15%;
+}
+.ilk{
+    top: 100px;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+.iki{
+    top: 155px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+.son{
+    top: 190px;
+    color: #913b26;
+    background-color: #fff;
+    padding: 4px 20px;
+    border-radius: 15px;
+}
+.link{
+    display: inline;
+}
+.link-item{
+    float: right;
+    text-decoration: none;
+    color: #913b26;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: 15%;
+    margin-left: -12%;
+}
+.renk{
+    background-color: #fff1ec;
+    color: #913b26;
+}
+.yazi{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10%;
+}
+.yazi h2{
+    font-size: 35px;
+}
+.footer{
+    padding: 4px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* Products Bölümü */
+.flex{
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 6%;
+}
+.flex p{
+    margin-right: 20px;
+    text-align: center;
+}
+.urunler-ust{
+    margin-right: 20px;
+    margin-top: 60px;
+    width: 220px;
+    height: 200px;
+}
+.urunler-alt{
+    margin-right: 20px;
+    width: 220px;
+    height: 200px;
+}
+.kare1{
+    width: 30px;
+    height: 30px;
+    background-color: #465A7B;
+}
+.kare2{
+    width: 30px;
+    height: 30px;
+    background-color: #3D897D;
+}
+.kare3{
+    width: 30px;
+    height: 30px;
+    background-color: #66547C;
+}
+.border{
+    margin-top: -22px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    border-right: 1px solid #808080;
+    border-left: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+}
+/* Contact Kısmı */
+.form{
+    margin-left: 36%;
+    margin-right: 36%;
+    margin-top: 100px;
+}
+.contact{
+    margin-left: 100px;
+    font-size: 18px;
+}
+.form input{
+    margin-top: 10px;
+    border: 1px solid #913B26;
+    border-radius: 8px;
+    width: 300px;
+}
+.form select{
+    margin-top: 10px;
+    border: 1px solid #913B26;
+    border-radius: 8px;
+    width: 305px;
+}
+.cinsiyet{
+    margin-left: 75px;
+}
+.cinsiyet input{
+    width: 20px;
+    margin-bottom: 20px;
+}
+.textarea{
+    border: 1px solid #913B26;
+    border-radius: 8px;
+}
+.bilgilendirme input{
+    width: 20px;
+}
+.bilgilendirme label{
+    font-size: 10px;
+}
+button{
+    width: 90px;
+    margin-top: 20px;
+    margin-left: 100px;
+    color: #fff;
+    background-color: #913B26;
+    border-radius: 8px;
+    border: 3px solid #913B26;
+}
