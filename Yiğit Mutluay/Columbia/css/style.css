@@ -1,0 +1,48 @@
+.bildirim{
+    color: #fff;
+    position: fixed;
+    background-color: #007abb;
+    top: 35%;
+    right: -6%;
+    font-size: 26px;
+    font-weight: bold;
+    transform: rotate(270deg);
+}
+.header{
+    margin-left: -8px;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    padding-right: 80%;
+}
+.head{
+    display: flex;
+}
+.header h1{
+    margin: 0;
+    padding: 20px;
+    background-color: #007AB8;
+}
+.link-item{
+    color: #fff;
+    text-decoration: none;
+    margin-top: 25px;
+    margin-left: 40px;
+}
+.hemen-kesfet{
+    position: absolute;
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    left: 40%;
+    right: 40%;
+    top: 75%;
+    bottom: 20%;
+}
+.hemen-kesfet:hover{
+    background-color: #ccc;
+}
