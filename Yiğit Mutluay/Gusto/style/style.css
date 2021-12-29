@@ -1,0 +1,104 @@
+/* Header Container Başlangıç */
+.header-container{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.header-container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -2;
+}
+.header-container h1{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 120px;
+}
+.header-container p{
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 140px;
+}
+.siyah{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #000;
+    opacity: 0.3;
+    width: 100%;
+    height: 404px;
+}
+.link{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 30px;
+}
+/* Header Container Bitiş */
+/*  */
+/*  */
+/* Content Container Başlangıç */
+.content-container{
+    margin: 10%;
+}
+.content-container h2{
+    text-align: center;
+    font-weight: 100;
+    font-size: 24px;
+}
+.flex{
+    display: flex;
+}
+.flex div{
+    text-align: center;
+}
+.flex img{
+    width: 200px;
+}
+/* Content Container Bitiş */
+/*  */
+/*  */
+/* Nav Başlangıç */
+.clearfix img{
+    width: 500px;
+}
+.nav-flex{
+    display: flex;
+    background-color: #ddd;
+}
+.float-end{
+    margin: 4% 10% 0 10%;
+}
+/* Nav Bitiş */
+/*  */
+/*  */
+/* Menu Başlangıç */
+.menu{
+    display: flex;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+}
+.menu div{
+    text-align: center;
+}
+.menu h4{
+    font-size: 14px;
+    font-weight: 100;
+}
+.left{
+    margin-right: auto;
+}
+.right{
+    margin-left: auto;
+}
+.float-start{
+    text-align: left;
+}
+.fiyat{
+    text-align: right;
+}

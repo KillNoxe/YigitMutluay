@@ -1,0 +1,12 @@
+.header{
+    margin-left: 35%;
+    margin-right: 35%;
+    text-align: center;
+}
+button{
+    background-color: #000;
+    color: #fff;
+}
+.bolum{
+    display: none;
+}

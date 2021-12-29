@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hesapla</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/hesapla.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <label class="yazi">Şekil</label><br>
+            <input onclick="ackapa(2)" type="radio" name="buton" id="radio1" checked>
+            <label>Dikdörtgen (veya Kare)</label><br>
+            <input onclick="ackapa(2)" type="radio" name="buton" id="radio2">
+            <label>Üçgen</label><br>
+            <input onclick="ackapa(1)" type="radio" name="buton" id="radio3">
+            <label>Daire</label><br>
+            <!-- Kare -->
+            <div id="Kare" style="padding-bottom: 20px;">
+            <label class="yazi">Taban (a) :</label>
+            <input style="margin-left: 41px;" type="text" id="taban">
+            <label>cm</label><br>
+            <label class="yazi">Yükseklik (h) :</label>
+            <input style="margin-left: 14px;" type="text" id="yukseklik">
+            <label>cm</label><br>
+            </div>
+            <!-- Daire -->
+            <div id="daire" style="display: none; padding-bottom: 40px;">
+                <label class="yazi">Yarıçap (r) :</label>
+                <input type="text" id="yaricap">
+                <label>cm</label><br>
+            </div>
+            <a href="#" onclick="Hesapla()">Hesapla</a>
+            <a href="#" onclick="temizle()">Temizle</a><br>
+            <label id="cevap">Cevap : </label>
+        </form>
+    </div>
+</body>
+</html>

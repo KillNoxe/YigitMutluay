@@ -1,0 +1,31 @@
+.container{
+    margin-left: 35%;
+    margin-right: 35%;
+    border: 1px solid #000;
+    padding: 30px;
+}
+.yazi{
+    font-weight: bold;
+}
+input[type=radio]{
+    margin-left: 70px;
+    margin-bottom: 20px;
+}
+input[type=text]{
+    width: 60px;
+    margin-left: 35px;
+    margin-top: 4px;
+}
+a{
+    padding: 4px;
+    color: #fff;
+    background-color: #3b8cee;
+    border: 1px solid #3b8cee;
+    border-radius: 5px;
+    text-decoration: none;
+}
+#cevap{
+    padding: 6px;
+    display: block;
+    margin: 6% 25%;
+}

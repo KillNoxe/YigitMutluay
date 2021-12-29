@@ -1,0 +1,16 @@
+.gizle{
+    text-decoration: none;
+    color: #00bfff;
+}
+.yazi{
+    height: 0px;
+    overflow: hidden;
+    position: relative;
+    transition: 2s;
+}
+.x{
+    height: 170px;
+}
+.y{
+    height: 0;
+}
