@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=7, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/validation.js"></script>
+</head>
+<body>
+    <div id="demo"></div>
+    <div class="container">
+        <div style="padding: 0 25%;">
+            <form action="test.php" method="get" onsubmit="return Kontrol()">
+                <div>
+                    <label for="">Adınız</label>
+                    <input type="text" id="name"  name="name" placeholder="Adınız" >
+                    <div id="fname" style="color: #ff0000;display: none;">Bu Alanı boş bırakamazsınız</div>
+                </div>
+                <div>
+                    <label for="">EMail Adresi</label>
+                    <input type="text" id="email" name="email" placeholder="Email" >
+                    <div id="ename" style="color: #ff0000;display: none;">Bu Alanı boş bırakamazsınız</div>
+                    <div id="ename2" style="color: #ff0000;display: none;">Doğru bir E-Mail Giriniz</div>
+                </div>
+                <div>
+                    <label for="">Telefonunuz</label>
+                    <input type="text" id="phone" name="phone" placeholder="Numaranız" >
+                    <div id="pname" style="color: #ff0000;display: none;">Bu Alanı boş bırakamazsınız</div>
+                </div>
+                <div>
+                    <label for="">Mesajınız</label>
+                    <textarea name="mesaj" placeholder="Mesaj" ></textarea>
+                </div>
+                <div style="text-align: center; padding: 10px;">
+                    <input type="submit" value="Gönder">
+                </div>
+
+
+            </form>
+        </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
