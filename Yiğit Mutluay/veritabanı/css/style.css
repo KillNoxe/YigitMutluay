@@ -1,0 +1,64 @@
+.header{
+    background-color: #ddd;
+    margin-top: 10px;
+}
+
+.link-item a{
+    text-decoration: none;
+    color: #000;
+    margin-left: 2%;
+    margin-right: 2%;}
+.link-item a:hover{
+    color: #8fbc8f;
+}
+.content{
+    margin-top: 20px;
+}
+.content img{
+    width: 100%;
+}
+.content p{
+    font-size: 12px;
+}
+.cizgi{
+    border-top: 1px solid #ddd;
+    margin: 0;
+}
+.yazi{
+    display: inline-block;
+    font-size: 10px !important;
+    margin: 0;
+    color: #808080;
+}
+.detay{
+    padding: 4px;
+    border: 2px solid #909090;
+    color: #808080;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+    transition: 1s;
+}
+.detay:hover{
+    color: #fff;
+    background-color: #8fbc8f;
+    border: 2px solid #8fbc8f;
+}
+h6{
+    margin-top: 25px !important;
+}
+ul{
+    margin-bottom: 100px !important;
+}
+li{
+    font-size: 12px;
+}
+.yeni-eklenenler img{
+    display: inline-block;
+    width: 100px;
+}
+.yeni-eklenenler p{
+    display: inline;
+    padding: 0;
+}
