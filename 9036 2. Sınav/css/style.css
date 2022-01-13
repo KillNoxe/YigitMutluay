@@ -1,0 +1,229 @@
+.header{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+.header img{
+    width: 200px;
+    margin-right: 320px;
+}
+.link-item{
+    text-decoration: none;
+    color: #000;
+    margin-left: 10px;
+    margin-bottom: 12px;
+}
+.link-item:hover{
+    color: #FF4707;
+    border-bottom: 2px solid #FF4707;
+    padding-bottom: 24px;
+}
+.checked{
+    color: #FF4707;
+    border-bottom: 2px solid #FF4707;
+    padding-left: 0;
+    padding-bottom: 24px;
+}
+/*  */
+/*  */
+.nav img{
+    margin-top: 25px;
+    margin-left: -8px;
+    width: 102%;
+}
+.nav-yazi{
+    position: absolute;
+    bottom: 220px;
+    left: 100px;
+}
+.nav-yazi h2{
+    color: #fff;
+    font-size: 75px;
+    margin: 0;
+    margin-top: 50px;
+}
+.nav-yazi h3{
+    margin: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 32px;
+}
+.nav-yazi p{
+    margin: 0;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 50%;
+}
+.nav-button{
+    position: absolute;
+    left: 100px;
+    bottom: 160px;
+}
+.nav-link-item{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid #FF4707;
+    padding: 12px 24px 12px 24px;
+    border-radius: 16px;
+}
+/*  */
+/*  */
+.footer{
+    margin-left: -8px;
+    margin-top: -5px;
+    width: 102%;
+    padding: 16px;
+    text-align: center;
+    background-color: #000;
+    color: #808080;
+}
+/*  */
+/*  */
+.cause{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.cause h3{
+    font-size: 32px;
+}
+.cause-image{
+    display: flex;
+}
+.cause-image div{
+    background-color: #ddd;
+    margin-right: 20px;
+    padding: 30px;
+    height: 251px;
+    width: 420px;
+}
+.cause-image img{
+    width: 200px;
+    display: inline-block;
+}
+.cause-image h4{
+    position: relative;
+    display: inline-block;
+    margin-left: 65%;
+    bottom: 270px;
+    font-weight: 100;
+}
+.cause-image p{
+    position: relative;
+    display: inline-block;
+    bottom: 280px;
+    margin-left: 65%;
+    color: #808080;
+    font-weight: 100;
+}
+.cause-image a{
+    position: relative;
+    display: inline-block;
+    bottom: 280px;
+    margin-left: 63%;
+    padding: 8px 30px;
+    font-size: 12px;
+}
+.cause-footer{
+    margin-left: -8px;
+    width: 102%;
+    padding: 12px;
+    text-align: center;
+    background-color: #000;
+    color: #808080;
+    margin-top: 32px;
+}
+/*  */
+/*  */
+.contact{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.contact p{
+    color: #808080;
+}
+.contact span{
+    color: #FF4707;
+    width: 25px;
+}
+.contact-span{
+    margin-top: 50px;
+}
+.contact-span p{
+    display: inline-block;
+}
+.contact-form{
+    height: 400px;
+    padding: 20px;
+    background-color: #ddd;
+    margin-top: 20px;
+
+}
+.contact-form input{
+    padding: 4px;
+    width: 98%;
+}
+.contact-link-item{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid #FF4707;
+    padding: 12px 28px 12px 28px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-left: 35%;
+    margin-top: 10%;
+}
+.contact-footer{
+    margin-left: -8px;
+    width: 102%;
+    padding: 6px;
+    text-align: center;
+    background-color: #000;
+    color: #808080;
+    margin-top: 16px;
+}
+.bildirim{
+    width: 350px;
+    height: 300px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 30%;
+    left: 33%;
+    border-radius: 10px;
+}
+.bildirim h3{
+    font-size: 16px;
+    font-weight: 100;
+}
+.bildirim img{
+    width: 80px;
+    margin-top: 5%;
+    margin-left: 36%;
+}
+.bildirim h4 {
+    color: #ff0000;
+    margin-top: 2%;
+    margin-left: 21%;
+    font-size: 20px;
+    font-weight: 100;
+}
+.bildirim-link-item{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid #FF4707;
+    padding: 8px 20px 8px 20px;
+    border-radius: 16px;
+    font-size: 12px;
+    margin-top: 5%;
+    margin-left: 65%;
+    float: left;
+}
+.bildirim-x{
+    text-decoration: none;
+    color: #000;
+    float: right;
+    margin-top: -10%;
+    margin-right: 3%;
+}
